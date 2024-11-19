@@ -9,9 +9,10 @@ import {themes as prismThemes} from 'prism-react-renderer';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
-const config = {
+
+export default {
   title: 'SecOS',
-  tagline: 'Dinosaurs are cool',
+  tagline: '专注于 AIoT 领域的安全操作系统内核',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -19,29 +20,45 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  // Allow to customize the presence/absence of a trailing slash at the end of 
+  // URLs/links, and how static HTML files are generated:
+  // undefined (default): keeps URLs untouched, and emit /docs/myDoc/index.html for /docs/myDoc.md
+  // true: add trailing slashes to URLs/links, and emit /docs/myDoc/index.html for /docs/myDoc.md
+  // false: remove trailing slashes from URLs/links, and emit /docs/myDoc.html for /docs/myDoc.md
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'qclic', // Usually your GitHub org/user name.
   projectName: 'qclic.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-  trailingSlash: false,
-
+  // The behavior of Docusaurus when it detects any broken link.
+  // he broken links detection is only available for a production build (docusaurus build).
   onBrokenLinks: 'throw',
+  // The behavior of Docusaurus when it detects any broken Markdown link.
+  // he broken links detection is only available for a production build (docusaurus build).
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh-Hans',
-    locales: ['zh-Hans', 'en'],
+    defaultLocale: 'zh',
+    locales: ['zh', 'en'],
     localeConfigs: {
-      'zh-Hans': {
+      zh: {
           label: '简体中文',
-      },
-      'en': {
-          label: 'English',
+          direction: 'ltr',
+          htmlLang: 'zh-CN',
+          calendar: 'gregory',
+          path: 'zh',
+        },
+      en: {
+        label: 'English',
+        direction: 'ltr',
+        htmlLang: 'en-US',
+        calendar: 'gregory',
+        path: 'en',
       },
     },
   },
@@ -73,6 +90,22 @@ const config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
+        pages: {
+          path: 'src/pages',
+          routeBasePath: '',
+          include: ['**/*.{js,jsx,ts,tsx,md,mdx}'],
+          exclude: [
+            '**/_*.{js,jsx,ts,tsx,md,mdx}',
+            '**/_*/**',
+            '**/*.test.{js,jsx,ts,tsx}',
+            '**/__tests__/**',
+          ],
+          // mdxPageComponent: '@theme/MDXPage',
+          // remarkPlugins: [require('./my-remark-plugin')],
+          rehypePlugins: [],
+          beforeDefaultRemarkPlugins: [],
+          beforeDefaultRehypePlugins: [],
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -84,7 +117,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      // image: 'img/docusaurus-social-card.jpg',
       announcementBar: {
         id: 'tips',
         content:'相关文档正在逐步整理中。。。',
@@ -100,6 +133,7 @@ const config = {
       },
       navbar: {
         title: 'SecOS',
+        hideOnScroll: true,
         logo: {
           alt: 'SecOS Logo',
           src: 'img/logo.svg',
@@ -188,5 +222,3 @@ const config = {
       },
     }),
 };
-
-export default config;
