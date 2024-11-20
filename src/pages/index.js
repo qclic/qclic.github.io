@@ -49,7 +49,7 @@ function HomepageBanner() {
       </div>
 
       <div className="secos-banner-right">
-        <img src="img/secos.arch.svg"></img>
+        <img className="secos-banner-content-image" src="img/secos.arch.svg"></img>
       </div>
     </div>
   );
