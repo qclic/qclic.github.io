@@ -2,14 +2,15 @@
 sidebar_position: 1
 ---
 
-# 简介
+# XX 派
 
 TODO
 
-## 简介 1
+
+## XX 派 1
 
 TODO
 
-## 简介 2
+## XX 派 2
 
 TODO

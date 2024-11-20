@@ -156,11 +156,11 @@ export default {
             items: [
               {
                 label: "📝 查看日志",
-                href: "/docs/upgrade",
+                href: "/docs/CHANGELOG",
               },
               {
                 label: "🚀 路线图",
-                href: "/docs/target",
+                href: "/docs/plan",
               },
             ],
           },
