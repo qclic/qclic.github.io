@@ -166,7 +166,7 @@
   justify-content: space-between;
 }
 
-.secos-form-content-imge {
+.secos-form-content-image {
   max-width: 100%;
   max-height: 500px;
   object-fit: contain;
@@ -175,6 +175,15 @@
 .secos-form-content-left,
 .secos-form-content-right {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secos-form-content-left-title,
+.secos-form-content-right-title {
+  align-items: center;
+  line-height: 2;
 }
 
 .secos-form-feature ul {
@@ -229,7 +238,7 @@
   justify-content: space-between;
 }
 
-.secos-module-content-imge {
+.secos-module-content-image {
   max-width: 100%;
   max-height: 500px;
   object-fit: contain;
@@ -238,6 +247,15 @@
 .secos-module-content-left,
 .secos-module-content-right {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secos-module-content-left-title,
+.secos-module-content-right-title {
+  align-items: center;
+  line-height: 2;
 }
 
 .secos-module-feature ul {
@@ -292,6 +310,24 @@
   justify-content: space-between;
 }
 
+.secos-target-content-middle {
+  margin: 0 30px;
+}
+
+.secos-target-content-left,
+.secos-target-content-right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secos-target-content-left-title,
+.secos-target-content-right-title {
+  align-items: center;
+  line-height: 2;
+}
+
 .secos-target-content-image {
   max-width: 100%;
   max-height: 500px;
@@ -299,7 +335,6 @@
 }
 
 .secos-target-feature {
-  padding: 10px;
   font-size: 1em;
   font-weight: 500;
 }
@@ -325,7 +360,7 @@
 @media (max-width: 600px) {
   .secos-banner-container {
     flex-direction: column-reverse;
-    max-width: 100%;
+    max-width: 95%;
     padding-bottom: 0;
   }
 
@@ -334,11 +369,14 @@
     width: 100%;
   }
   
-  .secos-form-container,
+  .secos-form-container {
+    flex-direction: column;
+    max-width: 95%;
+    padding-bottom: 0;
+  }
+
   .secos-form-content {
     flex-direction: column;
-    max-width: 100%;
-    padding-bottom: 0;
   }
 
   .secos-form-content-left,
@@ -346,11 +384,14 @@
     width: 100%;
   }
 
-  .secos-module-container,
+  .secos-module-container {
+    flex-direction: column;
+    max-width: 95%;
+    padding-bottom: 0;
+  }
+
   .secos-module-content {
     flex-direction: column;
-    max-width: 100%;
-    padding-bottom: 0;
   }
 
   .secos-module-content-left,
@@ -358,11 +399,14 @@
     width: 100%;
   }
 
-  .secos-target-container,
+  .secos-target-container {
+    flex-direction: column;
+    max-width: 95%;
+    padding-bottom: 0;
+  }
+
   .secos-target-content {
     flex-direction: column;
-    max-width: 100%;
-    padding-bottom: 0;
   }
 
   .secos-target-content-middle {
@@ -372,5 +416,8 @@
   .secos-target-content-left,
   .secos-target-content-right {
     width: 100%;
+  }
+  .secos-target-content-middle {
+    margin: 0;
   }
 }

@@ -65,6 +65,7 @@ function HomepageForm() {
           <img className="secos-form-content-image" src="img/secos.form.png"></img>
         </div>
         <div className="secos-form-content-right">
+        <h3 className="secos-form-content-right-title">多内核架构形态的进一步描述</h3>
           <ul className="secos-form-feature">
             <li>与 OS 无关的语言级核心库</li>
             <li>独立 OS 的组件库</li>
@@ -89,6 +90,7 @@ function HomepageModule() {
           <img className="secos-module-content-image" src="img/secos.module.png"></img>
         </div>
         <div className="secos-module-content-right">
+        <h3 className="secos-module-content-right-title">模块化设计的进一步描述</h3>
           <ul className="secos-module-feature">
             <li>与 OS 无关的语言级核心库</li>
             <li>独立 OS 的组件库</li>
@@ -110,8 +112,9 @@ function HomepageTarget() {
       <p className="text--center secos-target-description">全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计</p>
       <div className="secos-target-content">
         <div className="secos-target-content-left">
+        <h3 className="secos-target-content-left-title">多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持</h3>
           <ul className="secos-target-feature">
-            <li>模块 1 模块 1 模块 1  模块 1</li>
+            <li>模块 1 模块 1 模块 1 </li>
             <li>模块 2 模块 2 模块 2</li>
             <li>模块 3 模块 3 模块 3</li>
             <li>模块 4 模块 4 模块 4</li>
@@ -121,6 +124,7 @@ function HomepageTarget() {
           <img className="secos-target-content-image" src="img/secos.target.png"></img>
         </div>
         <div className="secos-target-content-right">
+        <h3 className="secos-target-content-right-title">通过模块的自由组合，形成适用于不同应用场景的内核。通过模块的自由组合，形成适用于不同应用场景的内核。</h3>
           <ul className="secos-target-feature">
             <li>模块 1 模块 1 模块 1 </li>
             <li>模块 2 模块 2 模块 2</li>
