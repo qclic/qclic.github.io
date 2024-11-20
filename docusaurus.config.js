@@ -118,6 +118,36 @@ export default {
     ({
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'L4NYMVDYG7',
+  
+        // Public API key: it is safe to commit it
+        apiKey: '2dc197c65a9a3bc16515f64933bb50b5',
+  
+        indexName: 'wiki-404lab-top',
+  
+        // Optional: see doc section below
+        contextualSearch: true,
+  
+        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        // externalUrlRegex: 'external\\.com|domain\\.com',
+  
+        // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        // replaceSearchResultPathname: {
+        //   from: '/docs/', // or as RegExp: /\/docs\//
+        //   to: '/',
+        // },
+  
+        // Optional: Algolia search parameters
+        searchParameters: {},
+  
+        // Optional: path for search page that enabled by default (`false` to disable it)
+        searchPagePath: 'search',
+  
+        // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
+        insights: false,
+      },
       announcementBar: {
         id: 'tips',
         content:'相关文档正在逐步整理中。。。',
@@ -163,6 +193,10 @@ export default {
                 href: "/docs/plan",
               },
             ],
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
           {
             href: 'https://github.com/qclic',
