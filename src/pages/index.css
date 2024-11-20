@@ -1,26 +1,10 @@
-/* ==================== All ==================== */
-@media (max-width: 600px) {
-  .secos-banner-container {
-      flex-direction: column-reverse;
-  }
-  .secos-banner-container .left, .right {
-      width: 100%;
-  }
-  .secos-module-container {
-    flex-direction: column;
-}
-
-}
 
 /* ==================== Banner ==================== */
-.secos-banner {
+.secos-banner-container {
   padding: 2rem 2rem;
   align-items: center;
   background-size: cover;
   overflow: hidden;
-}
-
-.secos-banner-container {
   display: flex;
   justify-content: space-between;
   max-width: 80%;
@@ -30,7 +14,6 @@
 
 .secos-banner-container .left, .right {
   width: 50%;
-  align-items: center;
 }
 
 .secos-banner-title {
@@ -38,7 +21,7 @@
   font-size: 2.5em;
   font-weight: 700;
   line-height: 1.25;
-  background-image: linear-gradient(81deg, #8759ff, #3fc4fe, #42ffac);
+  background-image: linear-gradient(81deg, #5d20f6, #27b7f5, #42ffac);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -79,9 +62,10 @@
 }
 
 .secos-support-platform {
+  font-size: 1.2em;
+  font-weight: 500;
   padding: 0;
   line-height: 2;
-  font-weight: 500;
 }
 
 .secos-support-icons {
@@ -95,14 +79,14 @@
   margin-right: 20px;
 }
 
-.secos-button {
+.secos-banner-button {
   position: relative;
   display: flex;
   justify-content: space-between;
   max-width: 50%;
 }
 
-.secos-explore-button {
+.secos-banner-explore-button {
   border-radius: 2em;
   min-width: 145px;
   color: #fff;
@@ -117,17 +101,17 @@
   z-index: 2;
 }
 
-.secos-explore-button:hover {
-  background: rgba(135, 89, 255, 0.9);
+.secos-banner-explore-button:hover {
+  background:  #b59af9;
   color: #fff;
   text-decoration: none;
 }
 
-.secos-download-button {
+.secos-banner-download-button {
   border-radius: 2em;
   min-width: 145px;
   color: #fff;
-  background: #8759ff;
+  background: #f5790deb;
   position: relative;
   line-height: 1.5;
   text-align: center;
@@ -138,35 +122,73 @@
   z-index: 2;
 }
 
-.secos-download-button:hover {
-  background: rgba(135, 89, 255, 0.9);
+.secos-banner-download-button:hover {
+  background: #f8a256eb;
   color: #fff;
   text-decoration: none;
-}
-
-
-.secos-version {
-  position: absolute;
-  z-index: 10;
-  right: 0;
-  top: -10px;
-  font-size: 16px;
-  color: #2618e6;
 }
 
 /* ==================== Module ==================== */
-
-.secos-module {
+.secos-module-container {
   padding: 2rem 2rem;
   align-items: center;
-  background-size: cover;
   overflow: hidden;
-}
-
-.secos-module-container {
   display: flex;
   justify-content: space-between;
   max-width: 80%;
   margin: 0 auto;
   position: relative;
+}
+
+/* ==================== Target ==================== */
+.secos-target-container {
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.secos-target-spec {
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.secos-target-spec li {
+  list-style: none;
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+.secos-target-spec li::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(135, 89, 255);
+}
+
+/* ==================== All ==================== */
+@media (max-width: 600px) {
+  .secos-banner-container {
+      flex-direction: column-reverse;
+  }
+  .secos-banner-container .left, .right {
+      width: 100%;
+  }
+  .secos-module-container {
+    flex-direction: column;
+  }
+  .secos-target-container {
+    flex-direction: column;
+  }
+  .secos-target-container .middle {
+    order: -1;
+  }
 }
