@@ -176,7 +176,7 @@ export default {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
             title: '文档',

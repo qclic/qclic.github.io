@@ -1,7 +1,7 @@
-
 /* ==================== Banner ==================== */
 .secos-banner-container {
-  padding: 2rem 2rem;
+  padding-top: 2rem;
+  padding-bottom: 10rem;
   align-items: center;
   background-size: cover;
   overflow: hidden;
@@ -12,7 +12,8 @@
   position: relative;
 }
 
-.secos-banner-container .left, .right {
+.secos-banner-left,
+.secos-banner-right {
   width: 50%;
 }
 
@@ -38,20 +39,26 @@
   -webkit-text-fill-color: transparent;
 }
 
-.secos-banner-spec {
+.secos-banner-feature {
   padding: 10px;
   font-size: 1em;
   font-weight: 500;
 }
 
-.secos-banner-spec li {
+.secos-banner-feature ul {
+  margin: 0;
+  padding: 0;
+}
+
+.secos-banner-feature li {
+  font-size: 16px;
   list-style: none;
   position: relative;
   padding-left: 1em;
   margin-bottom: 1em;
 }
 
-.secos-banner-spec li::before {
+.secos-banner-feature li::before {
   content: "";
   position: absolute;
   top: 0.5em;
@@ -61,21 +68,27 @@
   background-color: rgb(135, 89, 255);
 }
 
-.secos-support-platform {
+.secos-banner-feature li::marker {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.secos-banner-support-title {
   font-size: 1.2em;
   font-weight: 500;
   padding: 0;
   line-height: 2;
 }
 
-.secos-support-icons {
+.secos-banner-support-icons {
   display: flex;
   margin-top: 12px;
   margin-left: 12px;
   width: 96px;
-  height: 96px;}
+  height: 96px;
+}
 
-.secos-support-icons span {
+.secos-banner-support-icons span {
   margin-right: 20px;
 }
 
@@ -102,7 +115,7 @@
 }
 
 .secos-banner-explore-button:hover {
-  background:  #b59af9;
+  background: #b59af9;
   color: #fff;
   text-decoration: none;
 }
@@ -128,43 +141,177 @@
   text-decoration: none;
 }
 
-/* ==================== Module ==================== */
-.secos-module-container {
-  padding: 2rem 2rem;
-  align-items: center;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
+/* ==================== Form ==================== */
+.secos-form-container {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
   max-width: 80%;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   position: relative;
 }
 
-/* ==================== Target ==================== */
-.secos-target-container {
+.secos-form-title {
+  line-height: 3;
+}
+
+.secos-form-description {
+  line-height: 2.5;
+}
+
+.secos-form-content {
   align-items: center;
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
-  max-width: 80%;
-  margin: 0 auto;
-  position: relative;
 }
 
-.secos-target-spec {
-  padding: 10px;
-  font-size: 1em;
-  font-weight: 500;
+.secos-form-content-imge {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
 }
 
-.secos-target-spec li {
+.secos-form-content-left,
+.secos-form-content-right {
+  width: 50%;
+}
+
+.secos-form-feature ul {
+  margin: 0;
+  padding: 0;
+}
+
+.secos-form-feature li {
   list-style: none;
   position: relative;
   padding-left: 1em;
   margin-bottom: 1em;
 }
 
-.secos-target-spec li::before {
+.secos-form-feature li::before {
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(135, 89, 255);
+}
+
+.secos-form-feature li::marker {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+/* ==================== Module ==================== */
+.secos-module-container {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.secos-module-title {
+  line-height: 3;
+}
+
+.secos-module-description {
+  line-height: 2.5;
+}
+
+.secos-module-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secos-module-content-imge {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.secos-module-content-left,
+.secos-module-content-right {
+  width: 50%;
+}
+
+.secos-module-feature ul {
+  margin: 0;
+  padding: 0;
+}
+
+.secos-module-feature li {
+  list-style: none;
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+.secos-module-feature li::before {
+  content: "";
+  position: absolute;
+  top: 1em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(135, 89, 255);
+}
+
+.secos-module-feature li::marker {
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+/* ==================== Target ==================== */
+.secos-target-container {
+  padding-top: 2rem;
+  padding-bottom: 10rem;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.secos-target-title {
+  line-height: 3;
+}
+
+.secos-target-description {
+  line-height: 2.5;
+}
+
+.secos-target-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secos-target-content-image {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+.secos-target-feature {
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.secos-target-feature li {
+  list-style: none;
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: 1em;
+}
+
+.secos-target-feature li::before {
   content: "";
   position: absolute;
   top: 0.5em;
@@ -177,18 +324,53 @@
 /* ==================== All ==================== */
 @media (max-width: 600px) {
   .secos-banner-container {
-      flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    max-width: 100%;
+    padding-bottom: 0;
   }
-  .secos-banner-container .left, .right {
-      width: 100%;
+
+  .secos-banner-left,
+  .secos-banner-right {
+    width: 100%;
   }
-  .secos-module-container {
+  
+  .secos-form-container,
+  .secos-form-content {
     flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 0;
   }
-  .secos-target-container {
+
+  .secos-form-content-left,
+  .secos-form-content-right {
+    width: 100%;
+  }
+
+  .secos-module-container,
+  .secos-module-content {
     flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 0;
   }
-  .secos-target-container .middle {
+
+  .secos-module-content-left,
+  .secos-module-content-right {
+    width: 100%;
+  }
+
+  .secos-target-container,
+  .secos-target-content {
+    flex-direction: column;
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+
+  .secos-target-content-middle {
     order: -1;
+    width: 100%;
+  }
+  .secos-target-content-left,
+  .secos-target-content-right {
+    width: 100%;
   }
 }
