@@ -120,12 +120,12 @@ export default {
       // image: 'img/docusaurus-social-card.jpg',
       algolia: {
         // The application ID provided by Algolia
-        appId: 'L4NYMVDYG7',
+        appId: 'Q13DYDY9IC',
   
         // Public API key: it is safe to commit it
-        apiKey: '2dc197c65a9a3bc16515f64933bb50b5',
+        apiKey: 'ee7f03a0f69d593d77c99ce425b15a4b',
   
-        indexName: 'wiki-404lab-top',
+        indexName: 'qclicio',
   
         // Optional: see doc section below
         contextualSearch: true,
