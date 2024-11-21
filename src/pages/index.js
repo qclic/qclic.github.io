@@ -16,7 +16,7 @@ function HomepageBanner() {
 
         <div className="secos-banner-feature">
           <ul>
-            <li>模块化设计</li>
+            <li>组件化设计</li>
             <li>多内核架构形态</li>
             <li>多应用场景支持</li>
             <li>采用 Rust 语言开发</li>
@@ -65,7 +65,7 @@ function HomepageForm() {
           <img className="secos-form-content-image" src="img/secos.form.png"></img>
         </div>
         <div className="secos-form-content-right">
-        <h3 className="secos-form-content-right-title">多内核架构形态的进一步描述</h3>
+        <h2 className="secos-form-content-right-title">细化内核模块属性，形成单向依赖，独立存在的内核模块</h2>
           <ul className="secos-form-feature">
             <li>与 OS 无关的语言级核心库</li>
             <li>独立 OS 的组件库</li>
@@ -83,14 +83,14 @@ function HomepageForm() {
 function HomepageModule() {
   return (
     <div className="secos-module-container">
-      <h1 className="text--center secos-module-title">模块化设计</h1>
-      <p className="text--center secos-module-description">全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计</p>
+      <h1 className="text--center secos-module-title">组件化设计</h1>
+      <p className="text--center secos-module-description">通过对现有的典型 OS 内核的分析以及我们对多种模式内核的实践发现，通过抽取共性功能并封装为独立组件，进而形成组件仓库，以此为基础，形成自由选择适当的组件，采取适合的组合方式，来构建各种模式的内核一种的内核开发形式。</p>
       <div className="secos-module-content">
         <div className="secos-module-content-left">
           <img className="secos-module-content-image" src="img/secos.module.png"></img>
         </div>
         <div className="secos-module-content-right">
-        <h3 className="secos-module-content-right-title">模块化设计的进一步描述</h3>
+        <h2 className="text--center secos-module-content-right-title">组件化设计方式将在内核开发的效率、内核产品可靠性等方面都带来显著的提升，并且有利于内核开发者之间基于组件的协作</h2>
           <ul className="secos-module-feature">
             <li>与 OS 无关的语言级核心库</li>
             <li>独立 OS 的组件库</li>
@@ -109,10 +109,10 @@ function HomepageTarget() {
   return (
     <div className="secos-target-container">
       <h1 className="text--center secos-target-title">多应用场景支持</h1>
-      <p className="text--center secos-target-description">全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计全模块化设计</p>
+      <p className="text--center secos-target-description">多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持</p>
       <div className="secos-target-content">
         <div className="secos-target-content-left">
-        <h3 className="secos-target-content-left-title">多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持</h3>
+        <h2 className="secos-target-content-left-title">这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点</h2>
           <ul className="secos-target-feature">
             <li>模块 1 模块 1 模块 1 </li>
             <li>模块 2 模块 2 模块 2</li>
@@ -124,7 +124,7 @@ function HomepageTarget() {
           <img className="secos-target-content-image" src="img/secos.target.png"></img>
         </div>
         <div className="secos-target-content-right">
-        <h3 className="secos-target-content-right-title">通过模块的自由组合，形成适用于不同应用场景的内核。通过模块的自由组合，形成适用于不同应用场景的内核。</h3>
+        <h2 className="secos-target-content-right-title">通过模块的自由组合，形成适用于不同应用场景的内核。通过模块的自由组合，形成适用于不同应用场景的内核。</h2>
           <ul className="secos-target-feature">
             <li>模块 1 模块 1 模块 1 </li>
             <li>模块 2 模块 2 模块 2</li>

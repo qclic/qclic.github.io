@@ -60,7 +60,7 @@
 }
 
 .secos-banner-feature li {
-  font-size: 16px;
+  font-size: 18px;
   list-style: none;
   position: relative;
   padding-left: 1em;
@@ -83,7 +83,7 @@
 }
 
 .secos-banner-support-title {
-  font-size: 1.2em;
+  font-size: 20px;
   font-weight: 500;
   padding: 0;
   line-height: 2;
@@ -168,6 +168,7 @@
 
 .secos-form-description {
   line-height: 2.5;
+  font-size: 18px;
 }
 
 .secos-form-content {
@@ -202,6 +203,7 @@
 }
 
 .secos-form-feature li {
+  font-size: 18px;
   list-style: none;
   position: relative;
   padding-left: 1em;
@@ -216,11 +218,6 @@
   width: 5px;
   height: 5px;
   background-color: rgb(135, 89, 255);
-}
-
-.secos-form-feature li::marker {
-  font-size: 30px;
-  vertical-align: middle;
 }
 
 /* ==================== Module ==================== */
@@ -240,6 +237,7 @@
 
 .secos-module-description {
   line-height: 2.5;
+  font-size: 18px;
 }
 
 .secos-module-content {
@@ -274,6 +272,7 @@
 }
 
 .secos-module-feature li {
+  font-size: 18px;
   list-style: none;
   position: relative;
   padding-left: 1em;
@@ -283,16 +282,11 @@
 .secos-module-feature li::before {
   content: "";
   position: absolute;
-  top: 1em;
+  top: 0.7em;
   left: 0;
   width: 5px;
   height: 5px;
   background-color: rgb(135, 89, 255);
-}
-
-.secos-module-feature li::marker {
-  font-size: 30px;
-  vertical-align: middle;
 }
 
 /* ==================== Target ==================== */
@@ -312,6 +306,7 @@
 
 .secos-target-description {
   line-height: 2.5;
+  font-size: 18px;
 }
 
 .secos-target-content {
@@ -350,6 +345,7 @@
 }
 
 .secos-target-feature li {
+  font-size: 18px;
   list-style: none;
   position: relative;
   padding-left: 1em;
