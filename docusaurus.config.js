@@ -150,7 +150,7 @@ export default {
       },
       announcementBar: {
         id: 'tips',
-        content:'相关文档正在逐步整理中。。。',
+        content:'💪💪💪目前，项目处于初级阶段，相关源码与文档正在逐步整理中💪💪💪',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
