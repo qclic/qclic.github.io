@@ -199,7 +199,7 @@ export default {
             position: 'right',
           },
           {
-            href: 'https://github.com/qclic',
+            href: 'https://github.com/qclic/SecOS',
             label: 'GitHub',
             position: 'right',
           },
