@@ -27,7 +27,7 @@
 } */
 
 .secos-banner-title {
-  margin: 24px 0;
+  margin-bottom: 16px;
   font-size: 2.5em;
   font-weight: 700;
   line-height: 1.25;
@@ -38,10 +38,10 @@
 }
 
 .secos-banner-description {
-  margin: 24px 0;
+  margin-bottom: 16px;
   font-size: 2.5em;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.5;
   background-image: linear-gradient(81deg, #8759ff, #3fc4fe, #42ffac);
   -webkit-background-clip: text;
   background-clip: text;
@@ -101,10 +101,8 @@
 }
 
 .secos-banner-button {
-  padding-left: 10px;
-  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   max-width: 80%;
 }
 

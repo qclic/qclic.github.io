@@ -10,7 +10,7 @@ function HomepageBanner() {
         <div className="secos-banner-title" >
           SecOS
         </div>
-        <div className="secos-banner-description" style={{ position: "relative", zIndex: 2 }}>
+        <div className="secos-banner-description">
           一个专注于 AIoT 领域的安全操作系统
         </div>
 
