@@ -127,9 +127,6 @@
    --ifm-font-color-base-inverse: var(--ifm-color-content-inverse);
    --ifm-font-color-secondary: var(--ifm-color-content-secondary);
    --ifm-link-color : var(--ifm-color-warning);
-
-   --site-announcement-bar-stripe-color1: hsl(167deg 68% 85%);
-   --site-announcement-bar-stripe-color2: hsl(167deg 68% 95%);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -164,14 +161,6 @@ html[data-theme='dark'] {
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: var(--ifm-background-color);
-}
-
-html[data-theme='dark'] .clean-btn {
-  color: var(--ifm-color-secondary);
-}
-
-html[data-theme='dark'] .clean-btn :hover {
-  color: var(--ifm-color-secondary);
 }
 
 /* a & text */
@@ -267,6 +256,10 @@ html[data-theme='dark'] .footer__copyright {
   color: var(--ifm-color-secondary);
 }
 
+html[data-theme='dark'] div[class^='announcementBar_'] {
+  background-color: var(--ifm-background-color);
+}
+
 /* ==================== ALL ==================== */
 html, body {
   margin: 0;
@@ -294,6 +287,19 @@ html, body {
 
 /* ==================== announcementBar ==================== */
 div[class^='announcementBar_'] {
+  font-size: 18px;
+  font-weight: 500;
+  /*
+  --site-announcement-bar-stripe-color1: hsl(
+    var(--site-primary-hue-saturation) 85%
+  );
+  --site-announcement-bar-stripe-color2: hsl(
+    var(--site-primary-hue-saturation) 95%
+  );
+   */
+  --site-announcement-bar-stripe-color1: #e8d7ff;
+  --site-announcement-bar-stripe-color2: #ffe9d1;
+
   background: repeating-linear-gradient(
     35deg,
     var(--site-announcement-bar-stripe-color1),
@@ -301,8 +307,6 @@ div[class^='announcementBar_'] {
     var(--site-announcement-bar-stripe-color2) 10px,
     var(--site-announcement-bar-stripe-color2) 40px
   );
-  font-weight: 500;
-  font-size: 18px;
 }
 
 /* ==================== search ==================== */
