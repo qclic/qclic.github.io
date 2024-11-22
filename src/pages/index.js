@@ -11,7 +11,7 @@ function HomepageBanner() {
           SecOS
         </div>
         <div className="secos-banner-description" style={{ position: "relative", zIndex: 2 }}>
-          专注于 AIoT 领域的安全操作系统内核
+          一个专注于 AIoT 领域的安全操作系统
         </div>
 
         <div className="secos-banner-feature">
@@ -139,7 +139,7 @@ function HomepageTarget() {
 
 export default function Home() {
   return (
-    <Layout title="专注于 AIoT 领域的安全操作系统内核" description="专注于 AIoT 领域的安全操作系统内核">
+    <Layout title="一个专注于 AIoT 领域的安全操作系统" description="一个专注于 AIoT 领域的安全操作系统">
 
       <HomepageBanner />
 
