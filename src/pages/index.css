@@ -359,7 +359,6 @@
 @media (max-width: 600px) {
   .secos-banner-container {
     flex-direction: column-reverse;
-    max-width: 95%;
     padding-bottom: 0;
   }
 
@@ -370,7 +369,6 @@
   
   .secos-form-container {
     flex-direction: column;
-    max-width: 95%;
     padding-bottom: 0;
   }
 
@@ -385,7 +383,6 @@
 
   .secos-module-container {
     flex-direction: column;
-    max-width: 95%;
     padding-bottom: 0;
   }
 
@@ -400,7 +397,6 @@
 
   .secos-target-container {
     flex-direction: column;
-    max-width: 95%;
     padding-bottom: 0;
   }
 

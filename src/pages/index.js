@@ -65,7 +65,7 @@ function HomepageForm() {
           <img className="secos-form-content-image" src="img/secos.form.png"></img>
         </div>
         <div className="secos-form-content-right">
-        <h2 className="secos-form-content-right-title">细化内核模块属性，形成单向依赖，独立存在的内核模块</h2>
+        <h2 className="text--center secos-form-content-right-title">细化内核模块属性，形成单向依赖，独立存在的内核模块</h2>
           <ul className="secos-form-feature">
             <li>与 OS 无关的语言级核心库</li>
             <li>独立 OS 的组件库</li>
@@ -112,7 +112,7 @@ function HomepageTarget() {
       <p className="text--center secos-target-description">多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持</p>
       <div className="secos-target-content">
         <div className="secos-target-content-left">
-        <h2 className="secos-target-content-left-title">这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点</h2>
+        <h2 className="text--center secos-target-content-left-title">这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点</h2>
           <ul className="secos-target-feature">
             <li>模块 1 模块 1 模块 1 </li>
             <li>模块 2 模块 2 模块 2</li>
@@ -124,7 +124,7 @@ function HomepageTarget() {
           <img className="secos-target-content-image" src="img/secos.target.png"></img>
         </div>
         <div className="secos-target-content-right">
-        <h2 className="secos-target-content-right-title">通过模块的自由组合，形成适用于不同应用场景的内核。通过模块的自由组合，形成适用于不同应用场景的内核。</h2>
+        <h2 className="text--center secos-target-content-right-title">通过模块的自由组合，形成适用于不同应用场景的内核。通过模块的自由组合，形成适用于不同应用场景的内核。</h2>
           <ul className="secos-target-feature">
             <li>模块 1 模块 1 模块 1 </li>
             <li>模块 2 模块 2 模块 2</li>
