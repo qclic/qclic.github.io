@@ -7,7 +7,7 @@
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   position: relative;
 }
@@ -152,7 +152,7 @@
 .secos-form-container {
   padding-top: 2rem;
   padding-bottom: 5rem;
-  max-width: 90%;
+  max-width: 80%;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -219,7 +219,7 @@
 .secos-module-container {
   padding-top: 2rem;
   padding-bottom: 5rem;
-  max-width: 90%;
+  max-width: 80%;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -286,7 +286,7 @@
 .secos-target-container {
   padding-top: 2rem;
   padding-bottom: 5rem;
-  max-width: 90%;
+  max-width: 80%;
   justify-content: center;
   align-items: center;
   margin: 0 auto;

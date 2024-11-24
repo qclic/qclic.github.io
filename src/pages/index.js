@@ -43,7 +43,7 @@ function HomepageBanner() {
           </Link>
 
           <Link className="secos-banner-download-button" to={useBaseUrl("docs/intro")}>
-            下载
+            下载体验
           </Link>
         </div>
       </div>
