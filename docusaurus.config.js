@@ -73,10 +73,14 @@ export default {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/qclic/qclic.github.io',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           blogSidebarTitle: '全部博文',
           blogSidebarCount: 'ALL',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -105,6 +109,8 @@ export default {
           rehypePlugins: [],
           beforeDefaultRemarkPlugins: [],
           beforeDefaultRehypePlugins: [],
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -116,6 +122,11 @@ export default {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       algolia: {
@@ -251,6 +262,29 @@ export default {
         copyright: `Copyright © ${new Date().getFullYear()} Quancheng Laboratory Innovation Center`,
       },
       prism: {
+        dditionalLanguages: [
+          'rust',
+          'latex',
+          'TOML',
+          'Git',
+          'C',
+          'C++',
+          'bash',
+          'diff',
+          'json',
+          'scss',
+        ],
+        magicComments: [
+          {
+            className: 'theme-code-block-highlighted-line',
+            line: 'highlight-next-line',
+            block: {start: 'highlight-start', end: 'highlight-end'},
+          },
+          {
+            className: 'code-block-error-line',
+            line: 'This will error',
+          },
+        ],
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
