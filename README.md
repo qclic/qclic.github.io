@@ -14,10 +14,10 @@ This repository is the source repository for the SecOS documentation built using
 
 Docusaurus is actually a set of Node.js packages, so this documentation is essentially a Node.js application. Therefore, the first step is to ensure that the Node.js environment is correctly installed.
 
-1. Yarn is used as the package manager. By default, yarn is not installed in Node.js, so first, use the command npm install -g yarn to install it globally.
-2. To start development for the first time, you need to run the command yarn install to install the required dependencies.
+1. Yarn is used as the package manager. By default, yarn is not installed in Node.js, so first, use the command `npm install -g yarn` to install it globally.
+2. To start development for the first time, you need to run the command `yarn install` to install the required dependencies.
 3. Use any editor (VS Code is recommended) to modify the source code and edit new documents (all in Markdown format)
-4. Running the command yarn start will start a local development server and automatically open a browser window to preview the entire website.
+4. Running the command `yarn start` will start a local development server and automatically open a browser window to preview the entire website.
 
 ## Deploy
 
