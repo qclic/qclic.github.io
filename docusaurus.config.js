@@ -197,7 +197,7 @@ export default {
             items: [
               {
                 label: "Changelog",
-                href: "/docs/changelog",
+                href: "/docs/CHANGELOG",
               },
               {
                 label: "Roadmap",
