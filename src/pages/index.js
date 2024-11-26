@@ -1,6 +1,7 @@
 import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import Translate, { translate } from '@docusaurus/Translate';
 import "./index.css";
 
 function HomepageBanner() {
@@ -11,22 +12,22 @@ function HomepageBanner() {
           SecOS
         </div>
         <div className="secos-banner-description">
-          一个专注于 AIoT 领域的安全操作系统
+          <Translate>A security operating system focused on the AIoT field</Translate>
         </div>
 
         <div className="secos-banner-feature">
           <ul>
-            <li>组件化设计</li>
-            <li>多内核架构形态</li>
-            <li>多应用场景支持</li>
-            <li>采用 Rust 语言开发</li>
-            <li>支持 RTOS、BareMetal、Linux 作为子系统</li>
-            <li>MIT 宽松开源协议</li>
+            <li><Translate>Component-based design</Translate></li>
+            <li><Translate>Features multiple kernel architecture forms</Translate></li>
+            <li><Translate>Support for multiple application scenarios</Translate></li>
+            <li><Translate>Developed using the Rust programming language</Translate></li>
+            <li><Translate>Supports RTOS, BareMetal, and Linux as subsystems</Translate></li>
+            <li><Translate>Adopted the MIT permissive open-source license</Translate></li>
           </ul>
         </div>
 
         <div className="secos-banner-support">
-          <p className="secos-banner-support-title">多架构支持，已在如下架构中进行了验证</p>
+          <p className="secos-banner-support-title"><Translate>Multi-architecture support, verified on the following architectures</Translate></p>
           <div className="secos-banner-support-icons">
             <span>
               <img src="img/arm.svg"></img>
@@ -39,11 +40,11 @@ function HomepageBanner() {
 
         <div className="secos-banner-button">
           <Link className="secos-banner-explore-button" to={useBaseUrl("docs/intro")}>
-            入门指南
+            <Translate>Getting Started Guide</Translate>
           </Link>
 
           <Link className="secos-banner-download-button" to={useBaseUrl("docs/intro")}>
-            下载体验
+            <Translate>Download and Experience</Translate>
           </Link>
         </div>
       </div>
@@ -58,21 +59,18 @@ function HomepageBanner() {
 function HomepageForm() {
   return (
     <div className="secos-form-container">
-      <h1 className="text--center secos-form-title">多内核架构形态</h1>
-      <p className="text--center secos-form-description">多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态多内核架构形态</p>
+      <h1 className="text--center secos-form-title"><Translate>Multi-core architecture</Translate></h1>
+      <p className="text--center secos-form-description"><Translate>Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture.</Translate></p>
       <div className="secos-form-content">
         <div className="secos-form-content-left">
           <img className="secos-form-content-image" src="img/secos.form.png"></img>
         </div>
         <div className="secos-form-content-right">
-        <h2 className="text--center secos-form-content-right-title">细化内核模块属性，形成单向依赖，独立存在的内核模块</h2>
+          <h2 className="text--center secos-form-content-right-title"><Translate>Refine kernel module attributes to form unidirectional dependencies, creating standalone kernel modules</Translate></h2>
           <ul className="secos-form-feature">
-            <li>与 OS 无关的语言级核心库</li>
-            <li>独立 OS 的组件库</li>
-            <li>耦合 OS 的组件库</li>
-            <li>挂接组件的内核主干</li>
-            <li>独立 OS 的组件库无紧耦合依赖关系</li>
-            <li>基于配置和静态分析进行架构优化</li>
+            <li><Translate>Language-level core libraries independent of the operating system</Translate></li>
+            <li><Translate>Operating System-independent component library</Translate></li>
+            <li><Translate>Architecture optimization based on configuration and static analysis</Translate></li>
           </ul>
         </div>
       </div>
@@ -83,21 +81,18 @@ function HomepageForm() {
 function HomepageModule() {
   return (
     <div className="secos-module-container">
-      <h1 className="text--center secos-module-title">组件化设计</h1>
-      <p className="text--center secos-module-description">通过对现有的典型 OS 内核的分析以及我们对多种模式内核的实践发现，通过抽取共性功能并封装为独立组件，进而形成组件仓库，以此为基础，形成自由选择适当的组件，采取适合的组合方式，来构建各种模式的内核一种的内核开发形式。</p>
+      <h1 className="text--center secos-module-title"><Translate>Component-based design</Translate></h1>
+      <p className="text--center secos-module-description"><Translate>Through the analysis of existing typical OS kernels and our practical experience with multiple kernel modes, we have found that by extracting common functionalities and encapsulating them as independent components, we can create a component repository. Based on this repository, we can freely select the appropriate components and adopt suitable combinations to build various kernel modes, forming a flexible and adaptable approach to kernel development</Translate></p>
       <div className="secos-module-content">
         <div className="secos-module-content-left">
           <img className="secos-module-content-image" src="img/secos.module.png"></img>
         </div>
         <div className="secos-module-content-right">
-        <h2 className="text--center secos-module-content-right-title">组件化设计方式将在内核开发的效率、内核产品可靠性等方面都带来显著的提升，并且有利于内核开发者之间基于组件的协作</h2>
+          <h2 className="text--center secos-module-content-right-title"><Translate>The component-based design approach will significantly improve kernel development efficiency, kernel product reliability, and more. It also facilitates collaboration among kernel developers based on components</Translate></h2>
           <ul className="secos-module-feature">
-            <li>与 OS 无关的语言级核心库</li>
-            <li>独立 OS 的组件库</li>
-            <li>耦合 OS 的组件库</li>
-            <li>挂接组件的内核主干</li>
-            <li>独立 OS 的组件库无紧耦合依赖关系</li>
-            <li>基于配置和静态分析进行架构优化</li>
+            <li><Translate>Language-level core libraries independent of the operating system</Translate></li>
+            <li><Translate>Operating System-independent component library</Translate></li>
+            <li><Translate>Architecture optimization based on configuration and static analysis</Translate></li>
           </ul>
         </div>
       </div>
@@ -108,28 +103,28 @@ function HomepageModule() {
 function HomepageTarget() {
   return (
     <div className="secos-target-container">
-      <h1 className="text--center secos-target-title">多应用场景支持</h1>
-      <p className="text--center secos-target-description">多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持多应用场景支持</p>
+      <h1 className="text--center secos-target-title"><Translate>Multiple application scenarios</Translate></h1>
+      <p className="text--center secos-target-description"><Translate>Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios</Translate></p>
       <div className="secos-target-content">
         <div className="secos-target-content-left">
-        <h2 className="text--center secos-target-content-left-title">这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点</h2>
+          <h2 className="text--center secos-target-content-left-title"><Translate>这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点</Translate></h2>
           <ul className="secos-target-feature">
-            <li>模块 1 模块 1 模块 1 </li>
-            <li>模块 2 模块 2 模块 2</li>
-            <li>模块 3 模块 3 模块 3</li>
-            <li>模块 4 模块 4 模块 4</li>
+            <li><Translate>模块 1 模块 1 模块 1</Translate></li>
+            <li><Translate>模块 2 模块 2 模块 2</Translate></li>
+            <li><Translate>模块 3 模块 3 模块 3</Translate></li>
+            <li><Translate>模块 4 模块 4 模块 4</Translate></li>
           </ul>
         </div>
         <div className="secos-target-content-middle">
           <img className="secos-target-content-image" src="img/secos.target.png"></img>
         </div>
         <div className="secos-target-content-right">
-        <h2 className="text--center secos-target-content-right-title">通过模块的自由组合，形成适用于不同应用场景的内核。通过模块的自由组合，形成适用于不同应用场景的内核。</h2>
+          <h2 className="text--center secos-target-content-right-title"><Translate>By freely combining modules, a kernel can be created that is suitable for different application scenarios. Through the flexible combination of modules, a kernel tailored to various application environments can be formed</Translate></h2>
           <ul className="secos-target-feature">
-            <li>模块 1 模块 1 模块 1 </li>
-            <li>模块 2 模块 2 模块 2</li>
-            <li>模块 3 模块 3 模块 3</li>
-            <li>模块 4 模块 4 模块 4</li>
+            <li><Translate>模块 1 模块 1 模块 1</Translate></li>
+            <li><Translate>模块 2 模块 2 模块 2</Translate></li>
+            <li><Translate>模块 3 模块 3 模块 3</Translate></li>
+            <li><Translate>模块 4 模块 4 模块 4</Translate></li>
           </ul>
         </div>
       </div>
@@ -139,7 +134,7 @@ function HomepageTarget() {
 
 export default function Home() {
   return (
-    <Layout title="一个专注于 AIoT 领域的安全操作系统" description="一个专注于 AIoT 领域的安全操作系统">
+    <Layout title="A security operating system focused on the AIoT field" description="A security operating system focused on the AIoT field">
 
       <HomepageBanner />
 

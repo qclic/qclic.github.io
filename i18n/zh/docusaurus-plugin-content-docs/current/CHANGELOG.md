@@ -2,7 +2,7 @@
 sidebar_position: 99
 ---
 
-# Changelog
+# 更新日志
 
 TODO
 

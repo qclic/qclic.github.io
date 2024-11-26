@@ -1,11 +1,11 @@
 ---
 slug: socos-docs
-title: About SecOS document
+title: 关于 SecOS 文档
 authors: [ZCShou]
 tags: [hello, secos, docusaurus]
 ---
 
-The SecOS documentation built using Docusaurus
+使用 Docusaurus 来进行构建的 SecOS 文档
 <!-- truncate -->
 
 ## 简介

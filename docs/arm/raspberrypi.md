@@ -2,15 +2,15 @@
 sidebar_position: 1
 ---
 
-# 树莓派
+# RaspberryPi
 
 TODO
 
 
-## 树莓派 1
+## RaspberryPi 1
 
 TODO
 
-## 树莓派 2
+## RaspberryPi 2
 
 TODO

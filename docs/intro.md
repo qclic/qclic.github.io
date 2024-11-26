@@ -2,14 +2,14 @@
 sidebar_position: 1
 ---
 
-# 简介
+# Introduction
 
 TODO
 
-## 简介 1
+## Introduction 1
 
 TODO
 
-## 简介 2
+## Introduction 2
 
 TODO

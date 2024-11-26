@@ -43,16 +43,9 @@ export default {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'zh',
-    locales: ['zh', 'en'],
+    defaultLocale: 'en',
+    locales: ['en', 'zh'],
     localeConfigs: {
-      zh: {
-          label: '简体中文',
-          direction: 'ltr',
-          htmlLang: 'zh-CN',
-          calendar: 'gregory',
-          path: 'zh',
-        },
       en: {
         label: 'English',
         direction: 'ltr',
@@ -60,6 +53,13 @@ export default {
         calendar: 'gregory',
         path: 'en',
       },
+      zh: {
+          label: '简体中文',
+          direction: 'ltr',
+          htmlLang: 'zh-CN',
+          calendar: 'gregory',
+          path: 'zh',
+        },
     },
   },
 
@@ -77,7 +77,7 @@ export default {
           showLastUpdateTime: true,
         },
         blog: {
-          blogSidebarTitle: '全部博文',
+          blogSidebarTitle: 'All posts',
           blogSidebarCount: 'ALL',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
@@ -161,7 +161,7 @@ export default {
       },
       announcementBar: {
         id: 'tips',
-        content:'💪💪💪目前，项目处于初级阶段，相关源码与文档正在逐步整理中💪💪💪',
+        content:'💪💪💪Currently, the project is in its early stages, and the related source code and documentation are being gradually organized.💪💪💪',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: true,
@@ -184,24 +184,24 @@ export default {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '文档',
+            label: 'Document',
           },
           {
             to: '/blog', 
-            label: '博客', 
+            label: 'Blog', 
             position: 'left'
           },
           {
-            label: "更新日志",
+            label: "Changelog",
             position: "left",
             items: [
               {
-                label: "📝 查看日志",
+                label: "Changelog",
                 href: "/docs/CHANGELOG",
               },
               {
-                label: "🚀 路线图",
-                href: "/docs/plan",
+                label: "Roadmap",
+                href: "/docs/roadmap",
               },
             ],
           },
@@ -224,7 +224,7 @@ export default {
         style: 'light',
         links: [
           {
-            title: '文档',
+            title: 'Document',
             items: [
               {
                 label: 'Tutorial',
@@ -233,7 +233,7 @@ export default {
             ],
           },
           {
-            title: '社区',
+            title: 'Community',
             items: [
               {
                 label: 'qclic',
@@ -246,7 +246,7 @@ export default {
             ],
           },
           {
-            title: '更多',
+            title: 'More',
             items: [
               {
                 label: 'openEuler',
