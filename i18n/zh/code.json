@@ -8,6 +8,21 @@
   "Features multiple kernel architecture forms": {
     "message": "具有多种内核架构形态"
   },
+  "This is a description of a key feature.": {
+    "message": "This is a description of a key feature."
+  },
+  "feature 1": {
+    "message": "feature 1"
+  },
+  "feature 2": {
+    "message": "feature 2"
+  },
+  "feature 3": {
+    "message": "feature 3"
+  },
+  "feature 4": {
+    "message": "feature 4"
+  },
   "Support for multiple application scenarios": {
     "message": "Support for multiple application scenarios"
   },
@@ -28,9 +43,6 @@
   },
   "Download and Experience": {
     "message": "Download and Experience"
-  },
-  "Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture.": {
-    "message": "Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture."
   },
   "Refine kernel module attributes to form unidirectional dependencies, creating standalone kernel modules": {
     "message": "Refine kernel module attributes to form unidirectional dependencies, creating standalone kernel modules"
@@ -55,21 +67,6 @@
   },
   "Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios": {
     "message": "Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios"
-  },
-  "这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点": {
-    "message": "这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点"
-  },
-  "模块 1 模块 1 模块 1": {
-    "message": "模块 1 模块 1 模块 1"
-  },
-  "模块 2 模块 2 模块 2": {
-    "message": "模块 2 模块 2 模块 2"
-  },
-  "模块 3 模块 3 模块 3": {
-    "message": "模块 3 模块 3 模块 3"
-  },
-  "模块 4 模块 4 模块 4": {
-    "message": "模块 4 模块 4 模块 4"
   },
   "By freely combining modules, a kernel can be created that is suitable for different application scenarios. Through the flexible combination of modules, a kernel tailored to various application environments can be formed": {
     "message": "By freely combining modules, a kernel can be created that is suitable for different application scenarios. Through the flexible combination of modules, a kernel tailored to various application environments can be formed"
@@ -515,5 +512,11 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "Multiple kernel architecture forms": {
+    "message": "Multiple kernel architecture forms"
+  },
+  "It allows flexible combination of various kernel architecture forms": {
+    "message": "It allows flexible combination of various kernel architecture forms"
   }
 }

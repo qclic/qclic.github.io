@@ -2,15 +2,15 @@
 sidebar_position: 1
 ---
 
-# XX 派
+# XX
 
 TODO
 
 
-## XX 派 1
+## XX 1
 
 TODO
 
-## XX 派 2
+## XX 2
 
 TODO

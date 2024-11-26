@@ -9,7 +9,7 @@ ZCShou:
     github: ZCShou
 
 test:
-  name: Test
+  name: 测试
   title: Test for authors
   url: https://test.com
   image_url: https://github.com/test.png

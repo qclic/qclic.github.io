@@ -59,8 +59,8 @@ function HomepageBanner() {
 function HomepageForm() {
   return (
     <div className="secos-form-container">
-      <h1 className="text--center secos-form-title"><Translate>Multi-core architecture</Translate></h1>
-      <p className="text--center secos-form-description"><Translate>Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture. Multi-core architecture.</Translate></p>
+      <h1 className="text--center secos-form-title"><Translate>Multiple kernel architecture forms</Translate></h1>
+      <p className="text--center secos-form-description"><Translate>It allows flexible combination of various kernel architecture forms</Translate></p>
       <div className="secos-form-content">
         <div className="secos-form-content-left">
           <img className="secos-form-content-image" src="img/secos.form.png"></img>
@@ -107,12 +107,12 @@ function HomepageTarget() {
       <p className="text--center secos-target-description"><Translate>Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios</Translate></p>
       <div className="secos-target-content">
         <div className="secos-target-content-left">
-          <h2 className="text--center secos-target-content-left-title"><Translate>这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点这里是一个主要的描述点</Translate></h2>
+          <h2 className="text--center secos-target-content-left-title"><Translate>This is a description of a key feature.</Translate></h2>
           <ul className="secos-target-feature">
-            <li><Translate>模块 1 模块 1 模块 1</Translate></li>
-            <li><Translate>模块 2 模块 2 模块 2</Translate></li>
-            <li><Translate>模块 3 模块 3 模块 3</Translate></li>
-            <li><Translate>模块 4 模块 4 模块 4</Translate></li>
+            <li><Translate>feature 1</Translate></li>
+            <li><Translate>feature 2</Translate></li>
+            <li><Translate>feature 3</Translate></li>
+            <li><Translate>feature 4</Translate></li>
           </ul>
         </div>
         <div className="secos-target-content-middle">
@@ -121,10 +121,10 @@ function HomepageTarget() {
         <div className="secos-target-content-right">
           <h2 className="text--center secos-target-content-right-title"><Translate>By freely combining modules, a kernel can be created that is suitable for different application scenarios. Through the flexible combination of modules, a kernel tailored to various application environments can be formed</Translate></h2>
           <ul className="secos-target-feature">
-            <li><Translate>模块 1 模块 1 模块 1</Translate></li>
-            <li><Translate>模块 2 模块 2 模块 2</Translate></li>
-            <li><Translate>模块 3 模块 3 模块 3</Translate></li>
-            <li><Translate>模块 4 模块 4 模块 4</Translate></li>
+            <li><Translate>feature 1</Translate></li>
+            <li><Translate>feature 2</Translate></li>
+            <li><Translate>feature 3</Translate></li>
+            <li><Translate>feature 4</Translate></li>
           </ul>
         </div>
       </div>
@@ -134,7 +134,9 @@ function HomepageTarget() {
 
 export default function Home() {
   return (
-    <Layout title="A security operating system focused on the AIoT field" description="A security operating system focused on the AIoT field">
+    <Layout 
+      title={translate({message: 'A security operating system focused on the AIoT field'})} 
+      description={translate({message: 'A security operating system focused on the AIoT field'})}>
 
       <HomepageBanner />
 

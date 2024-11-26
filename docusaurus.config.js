@@ -197,7 +197,7 @@ export default {
             items: [
               {
                 label: "Changelog",
-                href: "/docs/CHANGELOG",
+                href: "/docs/changelog",
               },
               {
                 label: "Roadmap",
@@ -262,7 +262,7 @@ export default {
         copyright: `Copyright © ${new Date().getFullYear()} Quancheng Laboratory Innovation Center`,
       },
       prism: {
-        dditionalLanguages: [
+        aditionalLanguages: [
           'rust',
           'latex',
           'TOML',
