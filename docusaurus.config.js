@@ -212,6 +212,16 @@ export default {
           {
             type: 'localeDropdown',
             position: 'right',
+            dropdownItemsAfter: [
+              {
+                type: 'html',
+                value: '<hr style="margin: 0.3rem 0;">',
+              },
+              {
+                href: 'https://github.com/qclic/qclic.github.io',
+                label: 'Help Us Translate',
+              },
+            ],
           },
           {
             href: 'https://github.com/qclic/SecOS',
