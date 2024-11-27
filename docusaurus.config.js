@@ -210,13 +210,14 @@ export default {
             position: 'right',
           },
           {
-            href: 'https://github.com/qclic/SecOS',
-            label: 'GitHub',
+            type: 'localeDropdown',
             position: 'right',
           },
           {
-            type: 'localeDropdown',
+            href: 'https://github.com/qclic/SecOS',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
