@@ -15,16 +15,8 @@
     "message": "博客",
     "description": "Navbar item with label Blog"
   },
-  "item.label.Changelog": {
-    "message": "更新日志",
-    "description": "Navbar item with label Changelog"
-  },
-  "item.label.GitHub": {
-    "message": "GitHub",
-    "description": "Navbar item with label GitHub"
-  },
-  "item.label.Roadmap": {
-    "message": "线路图",
-    "description": "Navbar item with label Roadmap"
+  "item.label.Community": {
+    "message": "开源社区",
+    "description": "Navbar item with label Community"
   }
 }

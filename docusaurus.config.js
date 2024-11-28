@@ -63,6 +63,18 @@ export default {
     },
   },
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: './sidebars.community.js',
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -182,28 +194,21 @@ export default {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'docs',
             position: 'left',
             label: 'Document',
           },
           {
             to: '/blog', 
+            activeBasePath: 'blog',
             label: 'Blog', 
             position: 'left'
           },
           {
-            label: "Changelog",
-            position: "left",
-            items: [
-              {
-                label: "Changelog",
-                href: "/docs/CHANGELOG",
-              },
-              {
-                label: "Roadmap",
-                href: "/docs/roadmap",
-              },
-            ],
+            to: '/community/introduction',
+            activeBasePath: 'community',
+            label: 'Community',
+            position: 'left'
           },
           {
             type: 'search',
@@ -239,7 +244,7 @@ export default {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/introduction',
               },
             ],
           },

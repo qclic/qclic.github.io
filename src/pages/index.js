@@ -39,11 +39,11 @@ function HomepageBanner() {
         </div>
 
         <div className="secos-banner-button">
-          <Link className="secos-banner-explore-button" to={useBaseUrl("docs/intro")}>
+          <Link className="secos-banner-explore-button" to={useBaseUrl("docs/introduction")}>
             <Translate>Getting Started Guide</Translate>
           </Link>
 
-          <Link className="secos-banner-download-button" to={useBaseUrl("docs/intro")}>
+          <Link className="secos-banner-download-button" to={useBaseUrl("docs/introduction")}>
             <Translate>Download and Experience</Translate>
           </Link>
         </div>

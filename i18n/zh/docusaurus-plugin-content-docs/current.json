@@ -3,20 +3,16 @@
     "message": "下一篇",
     "description": "The label for version current"
   },
-  "sidebar.tutorialSidebar.category.ARM": {
+  "sidebar.docs.category.ARM": {
     "message": "ARM",
-    "description": "The label for category ARM in sidebar tutorialSidebar"
+    "description": "The label for category ARM in sidebar docs"
   },
-  "sidebar.tutorialSidebar.category.ARM.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
-    "description": "The generated-index page description for category ARM in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.RISC-V": {
+  "sidebar.docs.category.RISC-V": {
     "message": "RISC-V",
-    "description": "The label for category RISC-V in sidebar tutorialSidebar"
+    "description": "The label for category RISC-V in sidebar docs"
   },
-  "sidebar.tutorialSidebar.category.x86_64": {
+  "sidebar.docs.category.x86_64": {
     "message": "x86_64",
-    "description": "The label for category x86_64 in sidebar tutorialSidebar"
+    "description": "The label for category x86_64 in sidebar docs"
   }
 }
