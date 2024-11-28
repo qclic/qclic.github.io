@@ -1,6 +1,6 @@
 {
-  "label": "RISC-V",
-  "position": 3,
+  "label": "Design",
+  "position": 2,
   "link": {
     "type": "generated-index"
   }

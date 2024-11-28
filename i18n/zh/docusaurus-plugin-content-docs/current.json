@@ -1,7 +1,15 @@
 {
   "version.label": {
-    "message": "下一篇",
+    "message": "Next",
     "description": "The label for version current"
+  },
+  "sidebar.docs.category.Design": {
+    "message": "Design",
+    "description": "The label for category Design in sidebar docs"
+  },
+  "sidebar.docs.category.Examples": {
+    "message": "Examples",
+    "description": "The label for category Examples in sidebar docs"
   },
   "sidebar.docs.category.ARM": {
     "message": "ARM",

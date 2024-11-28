@@ -19,7 +19,7 @@ The SecOS documentation built using Docusaurus
 
 &emsp;&emsp;要创建一个 Docusaurus 项目可以使用 Docusaurus 脚手架命令行工具 `npx create-docusaurus@latest my-website classic`，也可以直接使用原始命令 `npm init docusaurus` 或 `yarn create docusaurus` 来进行创建，创建过程中会让我们选择几个基本配置。
 
-![在这里插入图片描述](./img/create_project.png)
+![在这里插入图片描述](./images/create_project.png)
 
 - 脚手架命令 `npx create-docusaurus@latest my-website classic` 实际上是对 `npm init docusaurus` 的进一步封装，创建出来的项目目录与后者创建的是一样的
 - 参数 classic 表示使用 classic 模板作为网站的基本样式；my-website 是存放 Docusaurus 项目源码文件的目录名字以及我们的网站的名字；JavaScript 表示 Docusaurus 的开发语言
@@ -28,13 +28,13 @@ The SecOS documentation built using Docusaurus
 
 &emsp;&emsp;无论使用哪个命令来创建项目，创建后的项目的目录结构如下所示，整个站点的主要配置都位于 `docusaurus.config.js` 中。
 
-![在这里插入图片描述](./img/folder.png)
+![在这里插入图片描述](./images/folder.png)
 
 ### blog
 
 &emsp;&emsp;Docusaurus 通过 Blog Plugin 这个插件为我们提供了一个功能齐全的 blog 发布页面的特性，对应于 `blog` 目录中的各种 Markdown 文件。
 
-![在这里插入图片描述](./img/blog.png)
+![在这里插入图片描述](./images/blog.png)
 
 - 通过在 `docusaurus.config.js` 中添加或删除如下配置项可以选择启用或禁用博客插件，禁用后则可以删除 `blog` 目录，也可以在设置路径选项后更改其名称。
     ```js
@@ -53,7 +53,7 @@ The SecOS documentation built using Docusaurus
     ```
 - 在默认情况下，博客的索引页面（默认情况下，它位于 `/blog`）是博客列表页面，所有的博客文章都在这个页面上显示。
 
-    ![在这里插入图片描述](./img/blog1.png)
+    ![在这里插入图片描述](./images/blog1.png)
 
 ### docs
 
@@ -88,10 +88,10 @@ The SecOS documentation built using Docusaurus
 ### Github Pages
 
 &emsp;&emsp;要将我们的 Docusaurus 网站部署在 Github Pages 上，首先需要在 Github 上创建一个仓库。在仓库的设置中可以看到，现在的 Github Pages 支持 `Deploy from a branch` 和 `GitHub Actions` 两种部署类型，Docusaurus 对这两种部署方式都是支持的。
-![在这里插入图片描述](./img/github_pages.png)
+![在这里插入图片描述](./images/github_pages.png)
 
 - `Deploy from a branch`：默认的部署方式，需要指定部署使用的仓库分支以及目录（只能是仓库根目录或者仓库根目录下的 docs 目录）
-    ![在这里插入图片描述](./img/page_branch.png)
+    ![在这里插入图片描述](./images/page_branch.png)
 	Docusaurus 已经为我们封装好了一键部署的命令：
 	- Linux：
 	    - Using SSH：`USE_SSH=true npm run deploy`
@@ -104,16 +104,16 @@ The SecOS documentation built using Docusaurus
 	    - Not using SSH：`cmd /C 'set "GIT_USER=<Your GitHub username>" && npm run deploy'`
 
 	该命令会自动解析 `docusaurus.config.js` 中关于部署到 Github Pages 需要的配置项，默认生产的 `docusaurus.config.js` 中相关配置可能不全
-    ![在这里插入图片描述](./img/page_branch_config.png)
+    ![在这里插入图片描述](./images/page_branch_config.png)
 	- `url` 和 `baseUrl`： 这两个配置项就是我们网站使用的域名。需要注意，Github 只对用户提供一个名为 `用户名或组织名.github.io` 的域名，如果有多个网站部署，则可以通过指定不同的 `baseUrl` 来区分
-    ![在这里插入图片描述](./img/pages_route.png)
+    ![在这里插入图片描述](./images/pages_route.png)
 	- `organizationName`：必须是我们仓库所有者的名字，也就是用户名或组织名
 	- `projectName`：我们 Github 上仓库的名字
 	- `deploymentBranch`：部署我们的网站使用的仓库分支的名字
 	- `trailingSlash`：域名最后的那个斜杠 `/`。这里设置为 false 表示不要加 `/`，默认情况下，GitHub 页面会在 Docusaurus 的 URL 中添加一个尾部斜杠。
 
 - `GitHub Actions`：即使用我们自定义的 GitHub Actions 来进行部署
-    ![在这里插入图片描述](./img/pages_deploy.png)
+    ![在这里插入图片描述](./images/pages_deploy.png)
 	这种部署方式需要在项目中新建 `.github/workflows/deploy.yml` 文件（创建目录，文件名可以自定义），然后在 `*.yml` 中输入以下内容即可
 	```c
 	name: Deploy to GitHub Pages

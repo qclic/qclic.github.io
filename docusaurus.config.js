@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 export default {
   title: 'SecOS',
-  tagline: '一个专注于 AIoT 领域的安全操作系统',
+  tagline: 'A security operating system focused on the AIoT field',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
