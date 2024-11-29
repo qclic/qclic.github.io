@@ -13,7 +13,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 export default {
   title: 'SecOS',
   tagline: 'A security operating system focused on the AIoT field',
-  favicon: 'img/favicon.ico',
+  favicon: 'images/site/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://qclic.github.io',
@@ -140,7 +140,7 @@ export default {
         respectPrefersColorScheme: true,
       },
       // Replace with your project's social card
-      // image: 'img/docusaurus-social-card.jpg',
+      // image: 'images/site/docusaurus-social-card.jpg',
       algolia: {
         // The application ID provided by Algolia
         appId: 'Q13DYDY9IC',
@@ -189,7 +189,7 @@ export default {
         hideOnScroll: true,
         logo: {
           alt: 'SecOS Logo',
-          src: 'img/logo.svg',
+          src: 'images/site/logo.svg',
         },
         items: [
           {

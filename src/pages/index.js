@@ -30,10 +30,10 @@ function HomepageBanner() {
           <p className="secos-banner-support-title"><Translate>Multi-architecture support, verified on the following architectures</Translate></p>
           <div className="secos-banner-support-icons">
             <span>
-              <img src="img/arm.svg"></img>
+              <img src="images/homepage/arm.svg"></img>
             </span>
             <span>
-              <img src="img/x86.svg"></img>
+              <img src="images/homepage/x86.svg"></img>
             </span>
           </div>
         </div>
@@ -50,7 +50,7 @@ function HomepageBanner() {
       </div>
 
       <div className="secos-banner-right">
-        <img className="secos-banner-content-image" src="img/secos.arch.svg"></img>
+        <img className="secos-banner-content-image" src="images/homepage/secos.arch.svg"></img>
       </div>
     </div>
   );
@@ -63,7 +63,7 @@ function HomepageForm() {
       <p className="text--center secos-form-description"><Translate>It allows flexible combination of various kernel architecture forms</Translate></p>
       <div className="secos-form-content">
         <div className="secos-form-content-left">
-          <img className="secos-form-content-image" src="img/secos.form.png"></img>
+          <img className="secos-form-content-image" src="images/homepage/secos.form.png"></img>
         </div>
         <div className="secos-form-content-right">
           <h2 className="text--center secos-form-content-right-title"><Translate>Refine kernel module attributes to form unidirectional dependencies, creating standalone kernel modules</Translate></h2>
@@ -85,7 +85,7 @@ function HomepageModule() {
       <p className="text--center secos-module-description"><Translate>Through the analysis of existing typical OS kernels and our practical experience with multiple kernel modes, we have found that by extracting common functionalities and encapsulating them as independent components, we can create a component repository. Based on this repository, we can freely select the appropriate components and adopt suitable combinations to build various kernel modes, forming a flexible and adaptable approach to kernel development</Translate></p>
       <div className="secos-module-content">
         <div className="secos-module-content-left">
-          <img className="secos-module-content-image" src="img/secos.module.png"></img>
+          <img className="secos-module-content-image" src="images/homepage/secos.module.png"></img>
         </div>
         <div className="secos-module-content-right">
           <h2 className="text--center secos-module-content-right-title"><Translate>The component-based design approach will significantly improve kernel development efficiency, kernel product reliability, and more. It also facilitates collaboration among kernel developers based on components</Translate></h2>
@@ -116,7 +116,7 @@ function HomepageTarget() {
           </ul>
         </div>
         <div className="secos-target-content-middle">
-          <img className="secos-target-content-image" src="img/secos.target.png"></img>
+          <img className="secos-target-content-image" src="images/homepage/secos.target.png"></img>
         </div>
         <div className="secos-target-content-right">
           <h2 className="text--center secos-target-content-right-title"><Translate>By freely combining modules, a kernel can be created that is suitable for different application scenarios. Through the flexible combination of modules, a kernel tailored to various application environments can be formed</Translate></h2>
