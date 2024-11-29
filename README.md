@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="static/img/logo.svg" alt="secos-logo" width="64"><br>
+    <img src="static/images/site/logo.svg" alt="secos-logo" width="64"><br>
     A security operating system focused on the AIoT (Artificial Intelligence of Things) field.<br/>
     <br/>
 </p>

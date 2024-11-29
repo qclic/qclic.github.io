@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="static/img/logo.svg" alt="secos-logo" width="64"><br>
+    <img src="static/images/site/logo.svg" alt="secos-logo" width="64"><br>
     一个专注于 AIoT 领域的安全操作系统<br/>
     <br/>
 </p>
