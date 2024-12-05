@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="static/images/site/logo.svg" alt="secos-logo" width="64"><br>
+    <img src="static/images/site/logo.svg" alt="infisecos-logo" width="64"><br>
     A security operating system focused on the AIoT (Artificial Intelligence of Things) field.<br/>
     <br/>
 </p>
@@ -8,7 +8,7 @@ English | [中文版](README_CN.md)
 
 # Introduction
 
-This repository is the source repository for the SecOS documentation built using [Docusaurus](https://docusaurus.io/). Docusaurus is an open-source website generator tool developed by Meta, based on React, for creating, maintaining, and deploying static websites.
+This repository is the source repository for the InfisecOS documentation built using [Docusaurus](https://docusaurus.io/). Docusaurus is an open-source website generator tool developed by Meta, based on React, for creating, maintaining, and deploying static websites.
 
 ## Development
 
@@ -21,7 +21,7 @@ Docusaurus is actually a set of Node.js packages, so this documentation is essen
 
 ## Deploy
 
-Currently, the SecOS documentation website is hosted on GitHub Pages. The repository is configured by default to deploy via GitHub Actions. When the source code is committed to the repository, it will automatically trigger GitHub Actions to deploy the website.
+Currently, the InfisecOS documentation website is hosted on GitHub Pages. The repository is configured by default to deploy via GitHub Actions. When the source code is committed to the repository, it will automatically trigger GitHub Actions to deploy the website.
 
 > It also supports yarn deploy for deploying to a separate branch (after modifying the repository configuration).
 >  - Linux:

@@ -13,7 +13,7 @@ docusaurus:
   permalink: /docusaurus
   description: Docusaurus tag description
 
-secos:
-  label: SecOS
-  permalink: /secos
-  description: SecOS tag description
+infisecos:
+  label: InfisecOS
+  permalink: /infisecos
+  description: InfisecOS tag description

@@ -1,11 +1,11 @@
 ---
 slug: socos-docs
-title: About SecOS document
+title: About InfisecOS document
 authors: [ZCShou]
-tags: [hello, secos, docusaurus]
+tags: [hello, infisecos, docusaurus]
 ---
 
-The SecOS documentation built using Docusaurus
+The InfisecOS documentation built using Docusaurus
 <!-- truncate -->
 
 ## 简介

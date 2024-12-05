@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="static/images/site/logo.svg" alt="secos-logo" width="64"><br>
+    <img src="static/images/site/logo.svg" alt="infisecos-logo" width="64"><br>
     一个专注于 AIoT 领域的安全操作系统<br/>
     <br/>
 </p>
@@ -8,7 +8,7 @@
 
 # 简介
 
-本仓库是使用 [Docusaurus](https://docusaurus.io/) 构建 SecOS 的文档的源码仓库。Docusaurus 是有 Meta 开源的基于 React 开发的一个用于创建、维护和部署静态网站的网站生成工具。
+本仓库是使用 [Docusaurus](https://docusaurus.io/) 构建 InfisecOS 的文档的源码仓库。Docusaurus 是有 Meta 开源的基于 React 开发的一个用于创建、维护和部署静态网站的网站生成工具。
 
 ## 开发
 
@@ -21,7 +21,7 @@ Docusaurus 实际上是一组 Node.js 包，因此，本文档实际上是一个
 
 ## 部署
 
-目前，SecOS 的文档网站托管在了 GitHub Pages 上，仓库默认配置为通过 GitHub Action 进行部署，当把源码提交到仓库之后将自动触发 GitHub Action 进行部署。
+目前，InfisecOS 的文档网站托管在了 GitHub Pages 上，仓库默认配置为通过 GitHub Action 进行部署，当把源码提交到仓库之后将自动触发 GitHub Action 进行部署。
 
 > 也支持 `yarn deploy` 进行独立分支部署（需修改仓库配置后）
 >  - Linux:

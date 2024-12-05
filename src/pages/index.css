@@ -1,5 +1,5 @@
 /* ==================== Banner ==================== */
-.secos-banner-container {
+.infisecos-banner-container {
   padding-top: 2rem;
   padding-bottom: 5rem;
   align-items: center;
@@ -12,21 +12,21 @@
   position: relative;
 }
 
-.secos-banner-left {
+.infisecos-banner-left {
   width: 40%;
 }
 
-.secos-banner-right {
+.infisecos-banner-right {
   width: 55%;
 }
 
-/* .secos-banner-content-image {
+/* .infisecos-banner-content-image {
   max-width: 100%;
   max-height: 500px;
   object-fit: contain;
 } */
 
-.secos-banner-title {
+.infisecos-banner-title {
   margin-bottom: 16px;
   font-size: 2.5em;
   font-weight: 700;
@@ -37,7 +37,7 @@
   -webkit-text-fill-color: transparent;
 }
 
-.secos-banner-description {
+.infisecos-banner-description {
   margin-bottom: 16px;
   font-size: 2.5em;
   font-weight: 700;
@@ -48,25 +48,25 @@
   -webkit-text-fill-color: transparent;
 }
 
-.secos-banner-feature {
+.infisecos-banner-feature {
   padding: 10px;
   font-size: 1em;
   font-weight: 500;
 }
 
-.secos-banner-feature ul {
+.infisecos-banner-feature ul {
   margin: 0;
   padding: 0;
 }
 
-.secos-banner-feature li {
+.infisecos-banner-feature li {
   list-style: none;
   position: relative;
   padding-left: 1em;
   margin-bottom: 0.5em;
 }
 
-.secos-banner-feature li::before {
+.infisecos-banner-feature li::before {
   content: "";
   position: absolute;
   top: 0.7em;
@@ -76,19 +76,19 @@
   background-color: rgb(135, 89, 255);
 }
 
-.secos-banner-feature li::marker {
+.infisecos-banner-feature li::marker {
   font-size: 30px;
   vertical-align: middle;
 }
 
-.secos-banner-support-title {
+.infisecos-banner-support-title {
   font-size: 20px;
   font-weight: 500;
   padding: 0;
   line-height: 2;
 }
 
-.secos-banner-support-icons {
+.infisecos-banner-support-icons {
   display: flex;
   margin-top: 12px;
   margin-left: 12px;
@@ -96,17 +96,17 @@
   height: 96px;
 }
 
-.secos-banner-support-icons span {
+.infisecos-banner-support-icons span {
   margin-right: 20px;
 }
 
-.secos-banner-button {
+.infisecos-banner-button {
   display: flex;
   justify-content:space-around;
   max-width: 80%;
 }
 
-.secos-banner-explore-button {
+.infisecos-banner-explore-button {
   border-radius: 2em;
   min-width: 145px;
   color: #fff;
@@ -121,13 +121,13 @@
   z-index: 2;
 }
 
-.secos-banner-explore-button:hover {
+.infisecos-banner-explore-button:hover {
   background: #b59af9;
   color: #fff;
   text-decoration: none;
 }
 
-.secos-banner-download-button {
+.infisecos-banner-download-button {
   border-radius: 2em;
   min-width: 145px;
   color: #fff;
@@ -142,14 +142,14 @@
   z-index: 2;
 }
 
-.secos-banner-download-button:hover {
+.infisecos-banner-download-button:hover {
   background: #f8a256eb;
   color: #fff;
   text-decoration: none;
 }
 
 /* ==================== Form ==================== */
-.secos-form-container {
+.infisecos-form-container {
   padding-top: 2rem;
   padding-bottom: 5rem;
   max-width: 80%;
@@ -159,53 +159,53 @@
   position: relative;
 }
 
-.secos-form-title {
+.infisecos-form-title {
   line-height: 3;
 }
 
-.secos-form-description {
+.infisecos-form-description {
   line-height: 2.5;
 }
 
-.secos-form-content {
+.infisecos-form-content {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-.secos-form-content-image {
+.infisecos-form-content-image {
   max-width: 100%;
   max-height: 500px;
   object-fit: contain;
 }
 
-.secos-form-content-left,
-.secos-form-content-right {
+.infisecos-form-content-left,
+.infisecos-form-content-right {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.secos-form-content-left-title,
-.secos-form-content-right-title {
+.infisecos-form-content-left-title,
+.infisecos-form-content-right-title {
   align-items: center;
   line-height: 2;
 }
 
-.secos-form-feature ul {
+.infisecos-form-feature ul {
   margin: 0;
   padding: 0;
 }
 
-.secos-form-feature li {
+.infisecos-form-feature li {
   list-style: none;
   position: relative;
   padding-left: 1em;
   margin-bottom: 1em;
 }
 
-.secos-form-feature li::before {
+.infisecos-form-feature li::before {
   content: "";
   position: absolute;
   top: 0.7em;
@@ -216,7 +216,7 @@
 }
 
 /* ==================== Module ==================== */
-.secos-module-container {
+.infisecos-module-container {
   padding-top: 2rem;
   padding-bottom: 5rem;
   max-width: 80%;
@@ -226,53 +226,53 @@
   position: relative;
 }
 
-.secos-module-title {
+.infisecos-module-title {
   line-height: 3;
 }
 
-.secos-module-description {
+.infisecos-module-description {
   line-height: 2.5;
 }
 
-.secos-module-content {
+.infisecos-module-content {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-.secos-module-content-image {
+.infisecos-module-content-image {
   max-width: 100%;
   max-height: 500px;
   object-fit: contain;
 }
 
-.secos-module-content-left,
-.secos-module-content-right {
+.infisecos-module-content-left,
+.infisecos-module-content-right {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.secos-module-content-left-title,
-.secos-module-content-right-title {
+.infisecos-module-content-left-title,
+.infisecos-module-content-right-title {
   align-items: center;
   line-height: 2;
 }
 
-.secos-module-feature ul {
+.infisecos-module-feature ul {
   margin: 0;
   padding: 0;
 }
 
-.secos-module-feature li {
+.infisecos-module-feature li {
   list-style: none;
   position: relative;
   padding-left: 1em;
   margin-bottom: 1em;
 }
 
-.secos-module-feature li::before {
+.infisecos-module-feature li::before {
   content: "";
   position: absolute;
   top: 0.7em;
@@ -283,7 +283,7 @@
 }
 
 /* ==================== Target ==================== */
-.secos-target-container {
+.infisecos-target-container {
   padding-top: 2rem;
   padding-bottom: 5rem;
   max-width: 80%;
@@ -293,57 +293,57 @@
   position: relative;
 }
 
-.secos-target-title {
+.infisecos-target-title {
   line-height: 3;
 }
 
-.secos-target-description {
+.infisecos-target-description {
   line-height: 2.5;
 }
 
-.secos-target-content {
+.infisecos-target-content {
   align-items: center;
   display: flex;
   justify-content: space-between;
 }
 
-.secos-target-content-middle {
+.infisecos-target-content-middle {
   margin: 0 30px;
 }
 
-.secos-target-content-left,
-.secos-target-content-right {
+.infisecos-target-content-left,
+.infisecos-target-content-right {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.secos-target-content-left-title,
-.secos-target-content-right-title {
+.infisecos-target-content-left-title,
+.infisecos-target-content-right-title {
   align-items: center;
   line-height: 2;
 }
 
-.secos-target-content-image {
+.infisecos-target-content-image {
   max-width: 100%;
   max-height: 500px;
   object-fit: contain;
 }
 
-.secos-target-feature {
+.infisecos-target-feature {
   font-size: 1em;
   font-weight: 500;
 }
 
-.secos-target-feature li {
+.infisecos-target-feature li {
   list-style: none;
   position: relative;
   padding-left: 1em;
   margin-bottom: 1em;
 }
 
-.secos-target-feature li::before {
+.infisecos-target-feature li::before {
   content: "";
   position: absolute;
   top: 0.7em;
@@ -355,62 +355,62 @@
 
 /* ==================== All ==================== */
 @media (max-width: 600px) {
-  .secos-banner-container {
+  .infisecos-banner-container {
     flex-direction: column-reverse;
     padding-bottom: 0;
   }
 
-  .secos-banner-left,
-  .secos-banner-right {
+  .infisecos-banner-left,
+  .infisecos-banner-right {
     width: 100%;
   }
   
-  .secos-form-container {
+  .infisecos-form-container {
     flex-direction: column;
     padding-bottom: 0;
   }
 
-  .secos-form-content {
+  .infisecos-form-content {
     flex-direction: column;
   }
 
-  .secos-form-content-left,
-  .secos-form-content-right {
+  .infisecos-form-content-left,
+  .infisecos-form-content-right {
     width: 100%;
   }
 
-  .secos-module-container {
+  .infisecos-module-container {
     flex-direction: column;
     padding-bottom: 0;
   }
 
-  .secos-module-content {
+  .infisecos-module-content {
     flex-direction: column;
   }
 
-  .secos-module-content-left,
-  .secos-module-content-right {
+  .infisecos-module-content-left,
+  .infisecos-module-content-right {
     width: 100%;
   }
 
-  .secos-target-container {
+  .infisecos-target-container {
     flex-direction: column;
     padding-bottom: 0;
   }
 
-  .secos-target-content {
+  .infisecos-target-content {
     flex-direction: column;
   }
 
-  .secos-target-content-middle {
+  .infisecos-target-content-middle {
     order: -1;
     width: 100%;
   }
-  .secos-target-content-left,
-  .secos-target-content-right {
+  .infisecos-target-content-left,
+  .infisecos-target-content-right {
     width: 100%;
   }
-  .secos-target-content-middle {
+  .infisecos-target-content-middle {
     margin: 0;
   }
 }

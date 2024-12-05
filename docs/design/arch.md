@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Architecture
 
-SecOS 是一个开源的、组件化的 Unikernel，以组合组件库的方式构建系统。
+InfisecOS 是一个开源的、组件化的 Unikernel，以组合组件库的方式构建系统。
 
 ![Arch](./images/arch.svg)
 
@@ -19,9 +19,9 @@ SecOS 是一个开源的、组件化的 Unikernel，以组合组件库的方式�
 -   SMP调度: SMP scheduling with single run queue
 -   文件系统: File system
 
-SecOS 由 apps、crates、modules 组成
+InfisecOS 由 apps、crates、modules 组成
 -  apps: 应用程序。它的运行需要依赖于modules组件库。
-- modules: SecOS 的组件库。
+- modules: InfisecOS 的组件库。
 -  crates: 通用的基础库，为 modules 实现提供支持。
 
 
@@ -63,7 +63,7 @@ SecOS 由 apps、crates、modules 组成
 其中进程组件与地址空间组件形成内核主干，而各种文件系统是功能组件（functional-kits）或内核组件（os-kits）。而系统调用接口层主要是对接抽象资源管理层，可以看成是抽象资源管理层面向应用的接口，也是内核主干的一部分。
 
 ## examples
-examples 即直接面向用户的可执行程序，SecOS 在设计上可以同时支持 Rust 编程和 C 语言编程，并提供了如下所示的一些示例
+examples 即直接面向用户的可执行程序，InfisecOS 在设计上可以同时支持 Rust 编程和 C 语言编程，并提供了如下所示的一些示例
 -  Rust 应用
 ![输入图片说明](./images/exp_rust.png)
 
@@ -71,18 +71,18 @@ examples 即直接面向用户的可执行程序，SecOS 在设计上可以同�
 ![输入图片说明](./images/exp_c.png)
 
 ## modules
-Modules 是 SecOS 的组件集合，它是与具体 OS 相关的。modules 下的模块是 SecOS 为了想要实现操作系统的必要功能而对 crates 的各种库组合和扩展后，更加接近用户应用层的抽象模块。
--   axalloc: SecOS 的全局内存分配器.
--   axconfig: SecOS 特定平台编译的常量和参数配置。
--   axdisplay: SecOS 的图形化模块。
--   axdriver: SecOS 的设备驱动模块。
--   axfs: SecOS 的文件系统模块。
+Modules 是 InfisecOS 的组件集合，它是与具体 OS 相关的。modules 下的模块是 InfisecOS 为了想要实现操作系统的必要功能而对 crates 的各种库组合和扩展后，更加接近用户应用层的抽象模块。
+-   axalloc: InfisecOS 的全局内存分配器.
+-   axconfig: InfisecOS 特定平台编译的常量和参数配置。
+-   axdisplay: InfisecOS 的图形化模块。
+-   axdriver: InfisecOS 的设备驱动模块。
+-   axfs: InfisecOS 的文件系统模块。
 -   axhal: SecOS硬件抽象层，为特定平台的操作提供统一的API。
--   axlog: SecOS 多个级别日志记录宏，包括：error、warn、info、debug、trace。
--   axnet: SecOS 的网络模块，包括：IpAddr、TcpSocket、UdpSocket、DnsSocket等。
--   axruntime: SecOS 的运行时库，是应用程序运行的基础环境。
--   axsync: SecOS 提供的同步操作模块，包括：Mutex、spin。
--   axtask: SecOS 的任务调度管理模块，包括：任务创建、调度、休眠、销毁等。
+-   axlog: InfisecOS 多个级别日志记录宏，包括：error、warn、info、debug、trace。
+-   axnet: InfisecOS 的网络模块，包括：IpAddr、TcpSocket、UdpSocket、DnsSocket等。
+-   axruntime: InfisecOS 的运行时库，是应用程序运行的基础环境。
+-   axsync: InfisecOS 提供的同步操作模块，包括：Mutex、spin。
+-   axtask: InfisecOS 的任务调度管理模块，包括：任务创建、调度、休眠、销毁等。
 
 ## crates
 crates 是 Modules 实现提供更底层的支持，通用的基础库。crates 模块属于是系统无关的模块，这些库可以理解为构建一个操作系统所需要的底层共性，我们以松耦合，高抽象的方式开发这些库，目的是后续可以为别的系统复用。

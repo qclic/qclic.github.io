@@ -6,16 +6,16 @@ import "./index.css";
 
 function HomepageBanner() {
   return (
-    <div className="secos-banner-container">
-      <div className="secos-banner-left">
-        <div className="secos-banner-title" >
-          SecOS
+    <div className="infisecos-banner-container">
+      <div className="infisecos-banner-left">
+        <div className="infisecos-banner-title" >
+        <Translate>InfisecOS</Translate>
         </div>
-        <div className="secos-banner-description">
+        <div className="infisecos-banner-description">
           <Translate>A security operating system focused on the AIoT field</Translate>
         </div>
 
-        <div className="secos-banner-feature">
+        <div className="infisecos-banner-feature">
           <ul>
             <li><Translate>Component-based design</Translate></li>
             <li><Translate>Features multiple kernel architecture forms</Translate></li>
@@ -26,9 +26,9 @@ function HomepageBanner() {
           </ul>
         </div>
 
-        <div className="secos-banner-support">
-          <p className="secos-banner-support-title"><Translate>Multi-architecture support, verified on the following architectures</Translate></p>
-          <div className="secos-banner-support-icons">
+        <div className="infisecos-banner-support">
+          <p className="infisecos-banner-support-title"><Translate>Multi-architecture support, verified on the following architectures</Translate></p>
+          <div className="infisecos-banner-support-icons">
             <span>
               <img src="images/homepage/arm.svg"></img>
             </span>
@@ -38,19 +38,19 @@ function HomepageBanner() {
           </div>
         </div>
 
-        <div className="secos-banner-button">
-          <Link className="secos-banner-explore-button" to={useBaseUrl("docs/introduction")}>
+        <div className="infisecos-banner-button">
+          <Link className="infisecos-banner-explore-button" to={useBaseUrl("docs/introduction")}>
             <Translate>Getting Started Guide</Translate>
           </Link>
 
-          <Link className="secos-banner-download-button" to={useBaseUrl("docs/introduction")}>
+          <Link className="infisecos-banner-download-button" to={useBaseUrl("docs/introduction")}>
             <Translate>Download and Experience</Translate>
           </Link>
         </div>
       </div>
 
-      <div className="secos-banner-right">
-        <img className="secos-banner-content-image" src="images/homepage/secos.arch.svg"></img>
+      <div className="infisecos-banner-right">
+        <img className="infisecos-banner-content-image" src="images/homepage/infisecos.arch.svg"></img>
       </div>
     </div>
   );
@@ -58,16 +58,16 @@ function HomepageBanner() {
 
 function HomepageForm() {
   return (
-    <div className="secos-form-container">
-      <h1 className="text--center secos-form-title"><Translate>Multiple kernel architecture forms</Translate></h1>
-      <p className="text--center secos-form-description"><Translate>It allows flexible combination of various kernel architecture forms</Translate></p>
-      <div className="secos-form-content">
-        <div className="secos-form-content-left">
-          <img className="secos-form-content-image" src="images/homepage/secos.form.png"></img>
+    <div className="infisecos-form-container">
+      <h1 className="text--center infisecos-form-title"><Translate>Multiple kernel architecture forms</Translate></h1>
+      <p className="text--center infisecos-form-description"><Translate>It allows flexible combination of various kernel architecture forms</Translate></p>
+      <div className="infisecos-form-content">
+        <div className="infisecos-form-content-left">
+          <img className="infisecos-form-content-image" src="images/homepage/infisecos.form.png"></img>
         </div>
-        <div className="secos-form-content-right">
-          <h2 className="text--center secos-form-content-right-title"><Translate>Refine kernel module attributes to form unidirectional dependencies, creating standalone kernel modules</Translate></h2>
-          <ul className="secos-form-feature">
+        <div className="infisecos-form-content-right">
+          <h2 className="text--center infisecos-form-content-right-title"><Translate>Refine kernel module attributes to form unidirectional dependencies, creating standalone kernel modules</Translate></h2>
+          <ul className="infisecos-form-feature">
             <li><Translate>Language-level core libraries independent of the operating system</Translate></li>
             <li><Translate>Operating System-independent component library</Translate></li>
             <li><Translate>Architecture optimization based on configuration and static analysis</Translate></li>
@@ -80,16 +80,16 @@ function HomepageForm() {
 
 function HomepageModule() {
   return (
-    <div className="secos-module-container">
-      <h1 className="text--center secos-module-title"><Translate>Component-based design</Translate></h1>
-      <p className="text--center secos-module-description"><Translate>Through the analysis of existing typical OS kernels and our practical experience with multiple kernel modes, we have found that by extracting common functionalities and encapsulating them as independent components, we can create a component repository. Based on this repository, we can freely select the appropriate components and adopt suitable combinations to build various kernel modes, forming a flexible and adaptable approach to kernel development</Translate></p>
-      <div className="secos-module-content">
-        <div className="secos-module-content-left">
-          <img className="secos-module-content-image" src="images/homepage/secos.module.png"></img>
+    <div className="infisecos-module-container">
+      <h1 className="text--center infisecos-module-title"><Translate>Component-based design</Translate></h1>
+      <p className="text--center infisecos-module-description"><Translate>Through the analysis of existing typical OS kernels and our practical experience with multiple kernel modes, we have found that by extracting common functionalities and encapsulating them as independent components, we can create a component repository. Based on this repository, we can freely select the appropriate components and adopt suitable combinations to build various kernel modes, forming a flexible and adaptable approach to kernel development</Translate></p>
+      <div className="infisecos-module-content">
+        <div className="infisecos-module-content-left">
+          <img className="infisecos-module-content-image" src="images/homepage/infisecos.module.png"></img>
         </div>
-        <div className="secos-module-content-right">
-          <h2 className="text--center secos-module-content-right-title"><Translate>The component-based design approach will significantly improve kernel development efficiency, kernel product reliability, and more. It also facilitates collaboration among kernel developers based on components</Translate></h2>
-          <ul className="secos-module-feature">
+        <div className="infisecos-module-content-right">
+          <h2 className="text--center infisecos-module-content-right-title"><Translate>The component-based design approach will significantly improve kernel development efficiency, kernel product reliability, and more. It also facilitates collaboration among kernel developers based on components</Translate></h2>
+          <ul className="infisecos-module-feature">
             <li><Translate>Language-level core libraries independent of the operating system</Translate></li>
             <li><Translate>Operating System-independent component library</Translate></li>
             <li><Translate>Architecture optimization based on configuration and static analysis</Translate></li>
@@ -102,25 +102,25 @@ function HomepageModule() {
 
 function HomepageTarget() {
   return (
-    <div className="secos-target-container">
-      <h1 className="text--center secos-target-title"><Translate>Multiple application scenarios</Translate></h1>
-      <p className="text--center secos-target-description"><Translate>Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios</Translate></p>
-      <div className="secos-target-content">
-        <div className="secos-target-content-left">
-          <h2 className="text--center secos-target-content-left-title"><Translate>This is a description of a key feature.</Translate></h2>
-          <ul className="secos-target-feature">
+    <div className="infisecos-target-container">
+      <h1 className="text--center infisecos-target-title"><Translate>Multiple application scenarios</Translate></h1>
+      <p className="text--center infisecos-target-description"><Translate>Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios. Multiple application scenarios</Translate></p>
+      <div className="infisecos-target-content">
+        <div className="infisecos-target-content-left">
+          <h2 className="text--center infisecos-target-content-left-title"><Translate>This is a description of a key feature.</Translate></h2>
+          <ul className="infisecos-target-feature">
             <li><Translate>feature 1</Translate></li>
             <li><Translate>feature 2</Translate></li>
             <li><Translate>feature 3</Translate></li>
             <li><Translate>feature 4</Translate></li>
           </ul>
         </div>
-        <div className="secos-target-content-middle">
-          <img className="secos-target-content-image" src="images/homepage/secos.target.png"></img>
+        <div className="infisecos-target-content-middle">
+          <img className="infisecos-target-content-image" src="images/homepage/infisecos.target.png"></img>
         </div>
-        <div className="secos-target-content-right">
-          <h2 className="text--center secos-target-content-right-title"><Translate>By freely combining modules, a kernel can be created that is suitable for different application scenarios. Through the flexible combination of modules, a kernel tailored to various application environments can be formed</Translate></h2>
-          <ul className="secos-target-feature">
+        <div className="infisecos-target-content-right">
+          <h2 className="text--center infisecos-target-content-right-title"><Translate>By freely combining modules, a kernel can be created that is suitable for different application scenarios. Through the flexible combination of modules, a kernel tailored to various application environments can be formed</Translate></h2>
+          <ul className="infisecos-target-feature">
             <li><Translate>feature 1</Translate></li>
             <li><Translate>feature 2</Translate></li>
             <li><Translate>feature 3</Translate></li>

@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 
 export default {
-  title: 'SecOS',
+  title: 'InfisecOS',
   tagline: 'A security operating system focused on the AIoT field',
   favicon: 'images/site/favicon.ico',
 
@@ -185,10 +185,10 @@ export default {
         },
       },
       navbar: {
-        title: 'SecOS',
+        title: 'InfisecOS',
         hideOnScroll: true,
         logo: {
-          alt: 'SecOS Logo',
+          alt: 'InfisecOS Logo',
           src: 'images/site/logo.svg',
         },
         items: [
@@ -229,7 +229,7 @@ export default {
             ],
           },
           {
-            href: 'https://github.com/qclic/SecOS',
+            href: 'https://github.com/qclic/InfisecOS',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
