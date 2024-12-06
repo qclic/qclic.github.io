@@ -1,8 +1,20 @@
-<p align="center">
-    <img src="static/images/site/logo.svg" alt="infisecos-logo" width="64"><br>
-    一个专注于 AIoT 领域的安全操作系统<br/>
-    <br/>
-</p>
+<!-- <div align="center">
+
+<img src="https://qclic.github.io/images/site/logo.svg" alt="infisecos-logo" width="64">
+
+</div> -->
+
+<h2 align="center">无极安全操作系统</h1>
+
+<p align="center">一个专注于 AIoT 领域的安全操作系统</p>
+
+<!-- <div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/qclic/InfisecOS?logo=github)](https://github.com/qclic/InfisecOS/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/qclic/InfisecOS?logo=github)](https://github.com/qclic/InfisecOS/network)
+[![license](https://img.shields.io/github/license/qclic/InfisecOS)](https://github.com/ZCShou/GoGoGo/blob/master/LICENSE)
+
+</div> -->
 
 [English](README.md) | 中文版
 

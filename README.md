@@ -1,8 +1,20 @@
-<p align="center">
-    <img src="static/images/site/logo.svg" alt="infisecos-logo" width="64"><br>
-    A security operating system focused on the AIoT (Artificial Intelligence of Things) field.<br/>
-    <br/>
-</p>
+<!-- <div align="center">
+
+<img src="https://qclic.github.io/images/site/logo.svg" alt="infisecos-logo" width="64">
+
+</div> -->
+
+<h2 align="center">InfisecOS</h1>
+
+<p align="center">A security operating system focused on the AIoT field</p>
+
+<!-- <div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/qclic/InfisecOS?logo=github)](https://github.com/qclic/InfisecOS/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/qclic/InfisecOS?logo=github)](https://github.com/qclic/InfisecOS/network)
+[![license](https://img.shields.io/github/license/qclic/InfisecOS)](https://github.com/ZCShou/GoGoGo/blob/master/LICENSE)
+
+</div> -->
 
 English | [中文版](README_CN.md)
 
