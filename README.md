@@ -4,7 +4,7 @@
 
 </div>
 
-<!-- <h2 align="center">InfisecOS</h1> -->
+<h2 align="center">InfisecOS</h1>
 
 <p align="center">A security operating system focused on the AIoT field</p>
 

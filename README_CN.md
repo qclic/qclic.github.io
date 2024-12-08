@@ -4,7 +4,7 @@
 
 </div>
 
-<!-- <h2 align="center">无极安全操作系统</h1> -->
+<h2 align="center">无极安全操作系统</h1>
 
 <p align="center">一个专注于 AIoT 领域的安全操作系统</p>
 
