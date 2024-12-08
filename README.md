@@ -1,10 +1,10 @@
-<!-- <div align="center">
+<div align="center">
 
 <img src="https://qclic.github.io/images/site/logo.svg" alt="infisecos-logo" width="64">
 
-</div> -->
+</div>
 
-<h2 align="center">InfisecOS</h1>
+<!-- <h2 align="center">InfisecOS</h1> -->
 
 <p align="center">A security operating system focused on the AIoT field</p>
 
