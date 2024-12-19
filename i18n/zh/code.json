@@ -6,31 +6,31 @@
     "message": "一个专注于 AIoT 领域的安全操作系统"
   },
   "Component-based design": {
-    "message": "Component-based design"
+    "message": "组件化设计"
   },
   "Features multiple kernel architecture forms": {
-    "message": "Features multiple kernel architecture forms"
+    "message": "多内核架构形态支持"
   },
   "Support for multiple application scenarios": {
-    "message": "Support for multiple application scenarios"
+    "message": "多应用场景支持"
   },
   "Developed using the Rust programming language": {
-    "message": "Developed using the Rust programming language"
+    "message": "采用 Rust 语言开发"
   },
   "Supports RTOS, BareMetal, and Linux as subsystems": {
-    "message": "Supports RTOS, BareMetal, and Linux as subsystems"
+    "message": "支持 RTOS, BareMetal 和 Linux 作为子系统"
   },
   "Adopted the MIT permissive open-source license": {
-    "message": "Adopted the MIT permissive open-source license"
+    "message": "MIT 宽松协议"
   },
   "Multi-architecture support, verified on the following architectures": {
-    "message": "Multi-architecture support, verified on the following architectures"
+    "message": "多种 CPU 架构支持，已验证的架构有："
   },
-  "Getting Started Guide": {
+  "Quick Start": {
+    "message": "快速上手"
+  },
+  "Get Started": {
     "message": "阅读指南"
-  },
-  "Download and Experience": {
-    "message": "下载体验"
   },
   "Multiple kernel architecture forms": {
     "message": "Multiple kernel architecture forms"

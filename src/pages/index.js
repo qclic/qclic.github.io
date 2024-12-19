@@ -39,12 +39,12 @@ function HomepageBanner() {
         </div>
 
         <div className="infisecos-banner-button">
-          <Link className="infisecos-banner-explore-button" to={useBaseUrl("docs/introduction")}>
-            <Translate>Getting Started Guide</Translate>
+          <Link className="infisecos-banner-explore-button" to={useBaseUrl("docs/quickstart")}>
+            <Translate>Quick Start</Translate>
           </Link>
 
           <Link className="infisecos-banner-download-button" to={useBaseUrl("docs/introduction")}>
-            <Translate>Download and Experience</Translate>
+            <Translate>Get Started</Translate>
           </Link>
         </div>
       </div>
