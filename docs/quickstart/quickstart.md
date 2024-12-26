@@ -13,13 +13,16 @@ sidebar_position: 2
 infisecos-images
 ├── README.md
 ├── README_CN.md
-├── arceos                                      # 不再需要，已经直接集成到了对应的开发板镜像中
-│   ├── phytiumpi.bin
-│   └── raspberrypi.bin
 ├── phytiumpi
-│   └── infisecos-image-phytiumpi.img           # 飞腾派开发板镜像
-└── raspberrypi4
-    └── infisecos-image-raspberrypi4-64.img     # 树莓派 4B 开发板镜像
+│   ├── Image                                   # Linux Kernel 
+│   ├── arceos.bin                              # arceos 镜像（不再需要，已经默认集成到了 infisecos-image）
+│   ├── infisecos-image.img                     # 飞腾派开发板镜像
+│   └── rootfs.cpio                             # rootfs used for initramfs
+└── raspberrypi4                                # 其中的各文件含义同上
+    ├── Image
+    ├── arceos.bin
+    ├── infisecos-image.img
+    └── rootfs.cpio
 ```
 
 ## 烧写
@@ -29,7 +32,7 @@ infisecos-images
 ### Linux
 在 Linux 系统中，可以直接使用命令 `sudo dd iflag=sync oflag=sync bs=4M if=infisecos-image-phytiumpi.img of=/dev/sdb status=progress` 来进行烧写
 
-- `if=` 指定输入文件，即我们要烧写的镜像文件。飞腾派对应 infisecos-image-phytiumpi.img，树莓派对应 infisecos-image-raspberrypi4-64.img
+- `if=` 指定输入文件，即我们要烧写的 `infisecos-image.img` 镜像文件。
 
 - `of=` 指定输出设备，即我们的 SD 卡盘符。
 
@@ -51,33 +54,29 @@ infisecos-images
 
 ### 处理终端输入太长后返回行头
 
-&emsp;&emsp;默认生成的 InfisecOS 系统中，如果在终端输入内容太长时就会返回行开头，非常影响使用！这通常是由于 Buildroot 构建的 Linux 系统终端的缓冲区大小不足以处理太长的输入导致的。
+默认生成的 InfisecOS 系统中，如果在终端输入内容太长时就会返回行开头，非常影响使用！这通常是由于 Buildroot 构建的 Linux 系统终端的缓冲区大小不足以处理太长的输入导致的。
 1. 解决方法一：直接 `nano /etc/profile` 或其他用户配置文件，然后在其中添加 `export COLUMNS=200` 和 `export LINES=200`，重启后生效！
 2. 解决方法二：每次登陆终端后，使用命令 `stty rows [number_of_rows] cols [number_of_columns]` 动态修改
 
-### 找不到 jailhouse 命令
-
-&emsp;&emsp;此时如果直接运行 `jailhouse` 命令会提示找不到该命令，这是因为 `jailhouse` 编译后默认的安装路径并不在我们构建的 InfisecOS 环境变量里面。直接 `nano /etc/profile` 并在其中的 `export PATH=` 内容的最后面输入 `:/usr/local/sbin`，保存后 `source /etc/profile` 即可
-
-![load_jailhouse](./images/load_jailhouse.png)
-
 ### 加载 Jailhouse 驱动
 
-&emsp;&emsp;Jailhouse 的驱动 `jailhouse.ko` 位于 `/lib/modules/5.10.0-openeuler/jailhouse/driver/` 目录中，默认是没有被加载进内核的。我们需要手动执行 `insmod /lib/modules/$(uname -r)/jailhouse/driver/jailhouse.ko` 或者 `modprobe jailhouse` 来进行加载，否则会报错 `opening /dev/jailhouse: No such file or directory`。
+Jailhouse 的驱动 `jailhouse.ko` 位于 `/lib/modules/5.10.0-openeuler/jailhouse/driver/` 目录中，默认是没有被加载进内核的。我们需要手动执行 `insmod /lib/modules/$(uname -r)/jailhouse/driver/jailhouse.ko` 或者 `modprobe jailhouse` 来进行加载，否则会报错 `opening /dev/jailhouse: No such file or directory`。
 
 ![load_driver](./images/load_driver.png)
 
-&emsp;&emsp;也可以配置一下开机自动加载，不过，虽然 Linux 在启动时加载 ko 的方式有很多，但是针对嵌入式的 Linux，很多方式都是不支持的。最简单有效的方法就通过修改启动过程的 rc 脚本。直接 `nano /etc/init.d/rcS`，然后在文件最后添加 `modprobe jailhouse` 即可
+也可以配置一下开机自动加载，不过，虽然 Linux 在启动时加载 ko 的方式有很多，但是针对嵌入式的 Linux，很多方式都是不支持的。最简单有效的方法就通过修改启动过程的 rc 脚本。直接 `nano /etc/init.d/rcS`，然后在文件最后添加 `modprobe jailhouse` 即可
 
 ![load_jailhouse_driver_auto](./images/load_jailhouse_driver_auto.png)
 
-&emsp;&emsp;修改后重启，就会在启动 LOG 中看到 `jailhouse: loading out-of-tree module taints kernel.` 这条记录。关于污染内核的这个描述，并不影响功能，Linux 官方文档 https://docs.kernel.org/admin-guide/tainted-kernels.html 有详细说明 。
+修改后重启，就会在启动 LOG 中看到 `jailhouse: loading out-of-tree module taints kernel.` 这条记录。关于污染内核的这个描述，并不影响功能，Linux 官方文档 https://docs.kernel.org/admin-guide/tainted-kernels.html 有详细说明 。
 
 ### 飞腾派
 
+注意，ArceOS 和 Linux 只能同时启动一个，因为默认提供的镜像中给他们分配了相同 CPU 和 内存空间！
+
 #### 启动 Jailhouse
 
-&emsp;&emsp;首先直接 `jailhouse enable /etc/jailhouse/phytiumpi.cell` 就可以启动 Jailhouse。启动后，当前 Linux 系统就会称为 Root Cell。
+首先直接 `jailhouse enable /etc/jailhouse/phytiumpi.cell` 就可以启动 Jailhouse。启动后，当前 Linux 系统就会称为 Root Cell。
 
 ![phytium_jailhouse_enable](./images/phytium_jailhouse_enable.png)
 
@@ -92,17 +91,35 @@ infisecos-images
 3. 最后启动 ArceOS：`jailhouse cell start 1`
     ![phytium_jailhouse_cell_start_arceos](./images/phytium_jailhouse_cell_start_arceos.png)
 
+#### 启动 Linux
+飞腾派上引出了 UART1 和 UART2 两个串口的接口，因此我们可以分别作为 Linux 宿主机的控制台和 linux 客户机的控制台。在此之前，使用命令 `stty -F /dev/ttyAMA2 speed 115200 cs8 -cstopb -parenb -echo` 初始化串口2。
+
+1. 将 Image 和 rootfs.cpio 复制到开发系统中
+2. 执行如下命令，启动 Linux。注意替换 Image 和 rootfs.cpio 的路径
+    ```bash
+    jailhouse cell linux -d /etc/jailhouse/dtbs/phytiumpi-linux.dtb \
+    -i /usr/local/libexec/jailhouse/demos/rootfs.cpio \
+    -c "console=ttyAMA1,115200 earlycon=pl011,0x2800e000 root=/dev/ram0 loglevel=8 pci=nomsi" \
+    /etc/jailhouse/phytiumpi-linux.cell \
+    /usr/local/libexec/jailhouse/demos/Image
+    ```
+    启动之后，我们就会在串口 2 上收到 Linux 的启动日志了
+
+    ![phytium_jailhouse_cell_start_linux.png](./images/phytium_jailhouse_cell_start_linux.png)
+
 #### 关闭 Jailhouse
 
-&emsp;&emsp;直接使用命令 `jailhouse disable` 就可以关闭 Jailhouse。
+直接使用命令 `jailhouse disable` 就可以关闭 Jailhouse。
 
 ![phytium_jailhouse_disable](./images/phytium_jailhouse_disable.png)
 
 ### 树莓派
 
+注意，ArceOS 和 Linux 只能同时启动一个，因为默认提供的镜像中给他们分配了相同 CPU 和 内存空间！
+
 #### 启动 Jailhouse
 
-&emsp;&emsp;首先直接 `jailhouse enable /etc/jailhouse/rpi4.cell` 就可以启动 Jailhouse。启动后，当前 Linux 系统就会称为 Root Cell。
+首先直接 `jailhouse enable /etc/jailhouse/rpi4.cell` 就可以启动 Jailhouse。启动后，当前 Linux 系统就会称为 Root Cell。
 
 ![rpi4_jailhouse_enable](./images/rpi4_jailhouse_enable.png)
 
@@ -111,14 +128,31 @@ infisecos-images
 1. 首先创建 ArceOS 对应的 Cell：`jailhouse cell create /etc/jailhouse/rpi4-arceos.cell`。执行后一个 Non-root Cell 就创建好了
     ![rpi4_jailhouse_cell_arceos](./images/rpi4_jailhouse_cell_arceos.png)
 
-2. 加载 ArceOS 的 Loader 程序以及 ArceOS 镜像：`jailhouse cell load 1 /usr/local/libexec/jailhouse/arceos-loader-rpi4.bin /usr/local/libexec/jailhouse/demos/arceos.bin -a 0x42000000`。这里的 1 是指的我们上面创建的 Non-root Cell 的 ID，也可以使用 Cell 的名字（注意是 Cell 中定义的 name，不是文件名）。
+2. 加载 ArceOS 的 Loader 程序以及 ArceOS 镜像：`jailhouse cell load 1 /usr/local/libexec/jailhouse/arceos-loader-raspi4.bin /usr/local/libexec/jailhouse/demos/arceos.bin -a 0x42000000`。这里的 1 是指的我们上面创建的 Non-root Cell 的 ID，也可以使用 Cell 的名字（注意是 Cell 中定义的 name，不是文件名）。
     ![rpi4_jailhouse_cell_loader_arceos](./images/rpi4_jailhouse_cell_loader_arceos.png)
 
 3. 启动：`jailhouse cell start 1`
     ![rpi4_jailhouse_cell_start_arceos](./images/rpi4_jailhouse_cell_start_arceos.png)
 
+#### 启动 Linux
+
+树莓派上只引出了一个串口接口，因此我们只能让Linux 宿主机和 linux 客户机共用一个控制台
+
+1. 将 Image 和 rootfs.cpio 复制到开发系统中
+2. 执行如下命令，启动 Linux。注意替换 Image 和 rootfs.cpio 的路径
+    ```bash
+    jailhouse cell linux -d /etc/jailhouse/dtbs/rpi4-linux.dtb \
+    -i /usr/local/libexec/jailhouse/demos/rootfs.cpio \
+    -c "console=ttyAMA0,115200 earlycon=pl011,0xfe201000 root=/dev/mem0 loglevel=8" \
+    /etc/jailhouse/rpi4-linux.cell \
+    /usr/local/libexec/jailhouse/demos/Image
+    ```
+    启动之后，我们就会在当前控制台上收到 Linux 的启动日志了
+
+    ![rpi4_jailhouse_cell_start_linux](./images/rpi4_jailhouse_cell_start_linux.png)
+
 #### 关闭 Jailhouse
 
-&emsp;&emsp;直接使用命令 `jailhouse disable` 就可以关闭 Jailhouse。
+直接使用命令 `jailhouse disable` 就可以关闭 Jailhouse。
 
 ![rpi4_jailhouse_disable](./images/rpi4_jailhouse_disable.png)
