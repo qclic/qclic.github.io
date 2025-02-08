@@ -16,11 +16,13 @@ infisecos-images
 ├── phytiumpi
 │   ├── Image                                   # Linux Kernel 
 │   ├── arceos.bin                              # arceos 镜像（不再需要，已经默认集成到了 infisecos-image）
+│   ├── starry.bin                              # starry 镜像（不再需要，已经默认集成到了 infisecos-image）
 │   ├── infisecos-image.img                     # 飞腾派开发板镜像
 │   └── rootfs.cpio                             # rootfs used for initramfs
 └── raspberrypi4                                # 其中的各文件含义同上
     ├── Image
     ├── arceos.bin
+    ├── starry.bin
     ├── infisecos-image.img
     └── rootfs.cpio
 ```
@@ -91,6 +93,20 @@ Jailhouse 的驱动 `jailhouse.ko` 位于 `/lib/modules/5.10.0-openeuler/jailhou
 3. 最后启动 ArceOS：`jailhouse cell start 1`
     ![phytium_jailhouse_cell_start_arceos](./images/phytium_jailhouse_cell_start_arceos.png)
 
+#### 启动 Starry
+
+1. 首先创建 Starry 对应的 Cell：`jailhouse cell create /etc/jailhouse/phytiumpi-starry.cell`。执行后一个 Non-root Cell 就创建好了
+    ![phytium_jailhouse_cell_starry](./images/phytium_jailhouse_cell_starry.png)
+
+2. 然后加载 Starry 的 Loader 程序以及 Starry 镜像：`jailhouse cell load 1 /usr/local/libexec/jailhouse/starry-loader-phytiumpi.bin /usr/local/libexec/jailhouse/demos/starry.bin -a 0xb2000000`。这里的 1 是指的我们上面创建的 Non-root Cell 的 ID，也可以使用 Cell 的名字（注意是 Cell 中定义的 name，不是文件名）。
+    ![phytium_jailhouse_cell_loader_starry](./images/phytium_jailhouse_cell_loader_starry.png)
+
+3. 加载 Starry 的测试用例：`jailhouse cell load 1 /usr/local/libexec/jailhouse/demos/disk.img -a 0xb9000000`
+    ![phytium_jailhouse_starry_disk](./images/phytium_jailhouse_starry_disk.png)
+
+4. 最后启动 Starry`jailhouse cell start 1`
+    ![phytium_jailhouse_cell_start_starry](./images/phytium_jailhouse_cell_start_starry.png)
+
 #### 启动 Linux
 飞腾派上引出了 UART1 和 UART2 两个串口的接口，因此我们可以分别作为 Linux 宿主机的控制台和 linux 客户机的控制台。在此之前，使用命令 `stty -F /dev/ttyAMA2 speed 115200 cs8 -cstopb -parenb -echo` 初始化串口2。
 
@@ -133,6 +149,20 @@ Jailhouse 的驱动 `jailhouse.ko` 位于 `/lib/modules/5.10.0-openeuler/jailhou
 
 3. 启动：`jailhouse cell start 1`
     ![rpi4_jailhouse_cell_start_arceos](./images/rpi4_jailhouse_cell_start_arceos.png)
+
+#### 启动 Starry
+
+1. 首先创建 Starry 对应的 Cell：`jailhouse cell create /etc/jailhouse/rpi4-starry.cell`。执行后一个 Non-root Cell 就创建好了
+    ![rpi4_jailhouse_cell_starry](./images/rpi4_jailhouse_cell_starry.png)
+
+2. 加载 Starry 的 Loader 程序以及 Starry 镜像：`jailhouse cell load 1 /usr/local/libexec/jailhouse/starry-loader-raspi4.bin /usr/local/libexec/jailhouse/demos/starry.bin -a 0x42000000`。这里的 1 是指的我们上面创建的 Non-root Cell 的 ID，也可以使用 Cell 的名字（注意是 Cell 中定义的 name，不是文件名）。
+    ![rpi4_jailhouse_cell_loader_starry](./images/rpi4_jailhouse_cell_loader_starry.png)
+
+3. 加载 Starry 的测试用例：`jailhouse cell load 1 /usr/local/libexec/jailhouse/demos/disk.img -a 0xb9000000`
+    ![rpi4_jailhouse_starry_disk](./images/rpi4_jailhouse_starry_disk.png)
+
+3. 启动：`jailhouse cell start 1`
+    ![rpi4_jailhouse_cell_start_starry](./images/rpi4_jailhouse_cell_start_starry.png)
 
 #### 启动 Linux
 
