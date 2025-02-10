@@ -158,7 +158,7 @@ Jailhouse 的驱动 `jailhouse.ko` 位于 `/lib/modules/5.10.0-openeuler/jailhou
 2. 加载 Starry 的 Loader 程序以及 Starry 镜像：`jailhouse cell load 1 /usr/local/libexec/jailhouse/starry-loader-raspi4.bin /usr/local/libexec/jailhouse/demos/starry.bin -a 0x42000000`。这里的 1 是指的我们上面创建的 Non-root Cell 的 ID，也可以使用 Cell 的名字（注意是 Cell 中定义的 name，不是文件名）。
     ![rpi4_jailhouse_cell_loader_starry](./images/rpi4_jailhouse_cell_loader_starry.png)
 
-3. 加载 Starry 的测试用例：`jailhouse cell load 1 /usr/local/libexec/jailhouse/demos/disk.img -a 0xb9000000`
+3. 加载 Starry 的测试用例：`jailhouse cell load 1 /usr/local/libexec/jailhouse/demos/disk.img -a 0x49000000`
     ![rpi4_jailhouse_starry_disk](./images/rpi4_jailhouse_starry_disk.png)
 
 3. 启动：`jailhouse cell start 1`
