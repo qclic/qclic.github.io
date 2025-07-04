@@ -16,7 +16,7 @@ export default {
   favicon: 'images/site/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://qclic.github.io',
+  url: 'https://tour.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -29,8 +29,8 @@ export default {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'qclic', // Usually your GitHub org/user name.
-  projectName: 'qclic.github.io', // Usually your repo name.
+  organizationName: 'tour', // Usually your GitHub org/user name.
+  projectName: 'tour.github.io', // Usually your repo name.
   deploymentBranch: 'gh-pages',
   // The behavior of Docusaurus when it detects any broken link.
   // he broken links detection is only available for a production build (docusaurus build).
@@ -84,7 +84,7 @@ export default {
           sidebarPath: './sidebars.docs.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/qclic/qclic.github.io',
+          editUrl: 'https://github.com/Josen-B/tour.github.io',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -100,7 +100,7 @@ export default {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:'https://github.com/qclic/qclic.github.io',
+          editUrl:'https://github.com/Josen-B/tour.github.io',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -148,7 +148,7 @@ export default {
         // Public API key: it is safe to commit it
         apiKey: 'ee7f03a0f69d593d77c99ce425b15a4b',
   
-        indexName: 'qclicio',
+        indexName: 'tourio',
   
         // Optional: see doc section below
         contextualSearch: true,
@@ -223,13 +223,13 @@ export default {
                 value: '<hr style="margin: 0.3rem 0;">',
               },
               {
-                href: 'https://github.com/qclic/qclic.github.io',
+                href: 'https://github.com/Josen-B/tour.github.io',
                 label: 'Help Us Translate',
               },
             ],
           },
           {
-            href: 'https://github.com/qclic/InfisecOS',
+            href: 'https://github.com/Josen/InfisecOS',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
@@ -252,8 +252,8 @@ export default {
             title: 'Community',
             items: [
               {
-                label: 'qclic',
-                href: 'https://github.com/qclic',
+                label: 'tour',
+                href: 'https://github.com/tour',
               },
               {
                 label: 'ArceOS',
